@@ -172,10 +172,18 @@ function setupSpecificEventGallery(gridId, filterId, eventData) {
       const isLandscape = item.aspect === "landscape" || item.aspect === "panoramic";
       const spanClass = item.aspect === "panoramic" ? "span-panoramic span-col-2" : isLandscape ? "span-col-2 span-landscape" : "";
       const catBadge = item.category === "equipo" ? "Equipo ATOM" : item.category === "medallas" ? "Llegada & Premiación" : "Momentos de Carrera";
+      const jpgPhoto = item.photo.replace(/\.webp$/i, ".jpg");
       return `
-        <div class="gallery-card ${spanClass}" onclick="openEventGalleryModal('${gridId}', ${idx})" title="Ampliar fotografía">
+        <div class="gallery-card ${spanClass}" onclick="openEventGalleryModal('${gridId}', ${idx})" role="button" tabindex="0" title="Ampliar fotografía">
           <div class="gallery-card-img-wrap">
-            <img src="${item.photo}" alt="${item.title}" loading="lazy" />
+            <picture>
+              <source srcset="${item.photo}" type="image/webp" />
+              <img src="${jpgPhoto}" 
+                   alt="${item.title}" 
+                   loading="lazy" 
+                   decoding="async"
+                   onerror="if(!this.dataset.triedJpg){this.dataset.triedJpg='1';this.src='${jpgPhoto}';}" />
+            </picture>
           </div>
           <div class="gallery-card-overlay">
             <div class="gallery-card-category">${catBadge}</div>
@@ -483,6 +491,30 @@ function setupLightbox() {
     }
   });
 
+  // Gestos táctiles para móviles (deslizar izquierda/derecha)
+  let touchStartX = 0;
+  let touchStartY = 0;
+
+  modal.addEventListener("touchstart", (e) => {
+    if (!e.changedTouches || !e.changedTouches[0]) return;
+    touchStartX = e.changedTouches[0].clientX;
+    touchStartY = e.changedTouches[0].clientY;
+  }, { passive: true });
+
+  modal.addEventListener("touchend", (e) => {
+    if (!e.changedTouches || !e.changedTouches[0]) return;
+    const diffX = e.changedTouches[0].clientX - touchStartX;
+    const diffY = e.changedTouches[0].clientY - touchStartY;
+    // Si el deslizamiento horizontal es mayor a 40px y predomina sobre el vertical
+    if (Math.abs(diffX) > 40 && Math.abs(diffX) > Math.abs(diffY)) {
+      if (diffX < 0) {
+        stepLightbox(1); // Deslizar hacia la izquierda -> siguiente foto
+      } else {
+        stepLightbox(-1); // Deslizar hacia la derecha -> foto anterior
+      }
+    }
+  }, { passive: true });
+
   document.addEventListener("keydown", (e) => {
     if (!modal.classList.contains("active")) return;
     if (e.key === "Escape") {
@@ -519,8 +551,15 @@ function updateLightboxContent() {
   if (!current) return;
 
   if (img) {
-    img.src = current.photo;
+    const photoUrl = current.photo;
+    img.src = photoUrl;
     img.alt = current.title || "ATOM Running";
+    img.onerror = function() {
+      if (!this.dataset.triedJpg && this.src.endsWith(".webp")) {
+        this.dataset.triedJpg = "1";
+        this.src = this.src.replace(/\.webp$/i, ".jpg");
+      }
+    };
   }
   if (titleEl) {
     titleEl.textContent = current.title || "";

@@ -63,3 +63,4 @@ Plataforma digital deportiva de alto rendimiento para **ATOM RUNNING CLUB**, com
 - **Instagram:** [@atomclubderunning](https://www.instagram.com/atomclubderunning/)
 - **Entrenador:** Prof. César Vergel ([@cesarvergel1986](https://www.instagram.com/cesarvergel1986/))
 - **Sedes Mendoza:** La Dormida (Santa Rosa) y La Paz
+
