@@ -1,6 +1,7 @@
 {
   "name": "atomrunning",
   "version": "1.0.0",
+  "type": "module",
   "description": "Sitio Web Oficial y Plataforma Digital para ATOM Club de Running (Mendoza)",
   "scripts": {
     "dev": "vite --host --port 5173",
