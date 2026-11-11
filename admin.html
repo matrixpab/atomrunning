@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Panel Administrable | ATOM Club de Running</title>
+  
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <style>
+    body {
+      background: #000B14;
+      padding-bottom: 80px;
+    }
+    :root {
+      --bg-card: var(--bg-navy-card);
+    }
+    .admin-navbar {
+      background: rgba(0, 18, 32, 0.95);
+      border-bottom: 1px solid var(--border-subtle);
+      padding: 18px 0;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      backdrop-filter: blur(16px);
+    }
+    .admin-nav-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 16px;
+    }
+    .admin-title-group {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+    }
+    .admin-title-group h1 {
+      font-size: 1.4rem;
+      margin: 0;
+    }
+    .admin-actions-bar {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+    .admin-layout {
+      display: grid;
+      grid-template-columns: 260px 1fr;
+      gap: 32px;
+      margin-top: 36px;
+    }
+    .admin-sidebar {
+      position: sticky;
+      top: 100px;
+      height: fit-content;
+      background: var(--bg-card);
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-lg);
+      padding: 16px;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+    .sidebar-link {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      padding: 12px 16px;
+      border-radius: var(--radius-sm);
+      font-size: 0.9rem;
+      font-weight: 700;
+      color: var(--text-muted);
+      transition: var(--transition-smooth);
+    }
+    .sidebar-link:hover, .sidebar-link.active {
+      background: rgba(0, 240, 255, 0.1);
+      color: var(--cyan-primary);
+    }
+    .admin-section {
+      background: var(--bg-card);
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-lg);
+      padding: 36px;
+      margin-bottom: 32px;
+    }
+    .admin-section-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 24px;
+      border-bottom: 1px solid var(--border-subtle);
+      padding-bottom: 16px;
+    }
+    .admin-section-header h2 {
+      font-size: 1.5rem;
+      color: var(--text-white);
+    }
+    .admin-item-card {
+      background: rgba(0, 18, 32, 0.6);
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-md);
+      padding: 20px;
+      margin-bottom: 16px;
+      transition: var(--transition-smooth);
+    }
+    .admin-item-card:hover {
+      border-color: rgba(0, 240, 255, 0.3);
+    }
+    .admin-item-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 14px;
+    }
+    .admin-item-header h4 {
+      color: var(--cyan-primary);
+      font-size: 1.1rem;
+    }
+    .form-grid-2 {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+    }
+    @media (max-width: 900px) {
+      .admin-layout {
+        grid-template-columns: 1fr;
+      }
+      .admin-sidebar {
+        display: none;
+      }
+      .form-grid-2 {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ADMIN NAVBAR -->
+  <header class="admin-navbar">
+    <div class="container admin-nav-inner">
+      <div class="admin-title-group">
+        <img src="assets/img/logos/atom-emblem.svg" alt="Logo" style="height:44px;width:44px;border-radius:10px;" />
+        <div>
+          <h1>Panel de Control · <span style="color:var(--cyan-primary)">ATOM CMS</span></h1>
+          <div style="font-size:0.8rem;color:#94A3B8;">Administración del Club de Running</div>
+        </div>
+      </div>
+
+      <div class="admin-actions-bar">
+        <a href="index.html" class="btn btn-outline-white btn-sm" target="_blank">
+          <i data-lucide="external-link" style="width:16px;height:16px;"></i> Ver Web Pública
+        </a>
+        <button id="btnExportJSON" class="btn btn-outline-white btn-sm" title="Descargar copia de respaldo en formato JSON">
+          <i data-lucide="download" style="width:16px;height:16px;"></i> Exportar JSON
+        </button>
+        <button id="btnResetDefault" class="btn btn-outline-white btn-sm" style="color:#FF6B4A;border-color:rgba(255,107,74,0.4);" title="Restablecer datos originales confirmados">
+          <i data-lucide="rotate-ccw" style="width:16px;height:16px;"></i> Reset
+        </button>
+        <button id="btnSaveAll" class="btn btn-cyan btn-sm">
+          <i data-lucide="save" style="width:16px;height:16px;"></i> Guardar Todo
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ADMIN CONTAINER -->
+  <main class="container">
+    <div class="admin-layout">
+      <!-- SIDEBAR -->
+      <aside class="admin-sidebar">
+        <a href="#sec-general" class="sidebar-link active">
+          <i data-lucide="info" style="width:18px;height:18px;"></i> Info General & Coach
+        </a>
+        <a href="#sec-sedes" class="sidebar-link">
+          <i data-lucide="map-pin" style="width:18px;height:18px;"></i> Sedes & Horarios
+        </a>
+        <a href="#sec-entrenamientos" class="sidebar-link">
+          <i data-lucide="activity" style="width:18px;height:18px;"></i> Entrenamientos
+        </a>
+        <a href="#sec-carreras" class="sidebar-link">
+          <i data-lucide="flag" style="width:18px;height:18px;"></i> Carreras & Eventos
+        </a>
+        <a href="#sec-galeria" class="sidebar-link">
+          <i data-lucide="image" style="width:18px;height:18px;"></i> Galería Multimedia
+        </a>
+        <a href="#sec-testimonios" class="sidebar-link">
+          <i data-lucide="message-square" style="width:18px;height:18px;"></i> Testimonios
+        </a>
+        <a href="#sec-faqs" class="sidebar-link">
+          <i data-lucide="help-circle" style="width:18px;height:18px;"></i> Preguntas Frecuentes
+        </a>
+      </aside>
+
+      <!-- SECCIONES DE EDICIÓN -->
+      <div class="admin-main-content">
+
+        <!-- 1. INFO GENERAL & COACH -->
+        <section class="admin-section" id="sec-general" style="padding:32px 0;">
+          <div class="admin-section-header">
+            <h2>1. Información General y Entrenador</h2>
+            <button class="btn btn-cyan btn-sm" onclick="saveClubInfo()">Guardar Esta Sección</button>
+          </div>
+
+          <h3 style="font-size:1.15rem;color:var(--cyan-primary);margin-bottom:16px;">Datos de Identidad</h3>
+          <div class="form-grid-2">
+            <div class="form-group">
+              <label class="form-label">Nombre del Club</label>
+              <input type="text" id="ci_name" class="form-control" />
+            </div>
+            <div class="form-group">
+              <label class="form-label">Lema / Tagline</label>
+              <input type="text" id="ci_tagline" class="form-control" />
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label">Título Hero Principal</label>
+            <input type="text" id="ci_headline" class="form-control" />
+          </div>
+
+          <div class="form-group">
+            <label class="form-label">Subtítulo Hero</label>
+            <textarea id="ci_subheadline" class="form-control" rows="2"></textarea>
+          </div>
+
+          <div class="form-grid-2">
+            <div class="form-group">
+              <label class="form-label">Instagram Oficial (URL)</label>
+              <input type="url" id="ci_instagram" class="form-control" />
+            </div>
+            <div class="form-group">
+              <label class="form-label">Usuario Instagram</label>
+              <input type="text" id="ci_instagramUser" class="form-control" />
+            </div>
+          </div>
+
+          <div class="form-grid-2">
+            <div class="form-group">
+              <label class="form-label">WhatsApp (Solo números con código de país, ej. 549261XXXXXXX)</label>
+              <input type="text" id="ci_whatsapp" class="form-control" />
+            </div>
+            <div class="form-group">
+              <label class="form-label">Mensaje Preconfigurado de WhatsApp</label>
+              <input type="text" id="ci_whatsappMsg" class="form-control" />
+            </div>
+          </div>
+
+          <h3 style="font-size:1.15rem;color:var(--cyan-primary);margin:24px 0 16px 0;">Entrenador Principal & Director Técnico</h3>
+          <div class="form-grid-2">
+            <div class="form-group">
+              <label class="form-label">Nombre del Entrenador</label>
+              <input type="text" id="coach_name" class="form-control" />
+            </div>
+            <div class="form-group">
+              <label class="form-label">Cargo / Título</label>
+              <input type="text" id="coach_role" class="form-control" />
+            </div>
+          </div>
+          <div class="form-grid-2">
+            <div class="form-group">
+              <label class="form-label">Instagram del Entrenador</label>
+              <input type="text" id="coach_ig" class="form-control" />
+            </div>
+            <div class="form-group">
+              <label class="form-label">Ruta de Foto del Entrenador</label>
+              <input type="text" id="coach_photo" class="form-control" />
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="form-label">Biografía y Filosofía</label>
+            <textarea id="coach_bio" class="form-control" rows="3"></textarea>
+          </div>
+        </section>
+
+        <!-- 2. SEDES Y HORARIOS -->
+        <section class="admin-section" id="sec-sedes" style="padding:32px 0;">
+          <div class="admin-section-header">
+            <h2>2. Sedes y Horarios (La Dormida / La Paz)</h2>
+            <button class="btn btn-cyan btn-sm" onclick="saveLocations()">Guardar Sedes</button>
+          </div>
+          <div id="adminLocationsList"></div>
+        </section>
+
+        <!-- 3. ENTRENAMIENTOS -->
+        <section class="admin-section" id="sec-entrenamientos" style="padding:32px 0;">
+          <div class="admin-section-header">
+            <h2>3. Modalidades de Entrenamiento</h2>
+            <div style="display:flex;gap:10px;">
+              <button class="btn btn-outline-white btn-sm" onclick="addTraining()">
+                <i data-lucide="plus"></i> Agregar Modalidad
+              </button>
+              <button class="btn btn-cyan btn-sm" onclick="saveTrainings()">Guardar Cambios</button>
+            </div>
+          </div>
+          <div id="adminTrainingsList"></div>
+        </section>
+
+        <!-- 4. CARRERAS Y EVENTOS -->
+        <section class="admin-section" id="sec-carreras" style="padding:32px 0;">
+          <div class="admin-section-header">
+            <h2>4. Carreras y Eventos</h2>
+            <div style="display:flex;gap:10px;">
+              <button class="btn btn-outline-white btn-sm" onclick="addRace()">
+                <i data-lucide="plus"></i> Agregar Carrera
+              </button>
+              <button class="btn btn-cyan btn-sm" onclick="saveRaces()">Guardar Carreras</button>
+            </div>
+          </div>
+          <div id="adminRacesList"></div>
+        </section>
+
+        <!-- 5. GALERÍA -->
+        <section class="admin-section" id="sec-galeria" style="padding:32px 0;">
+          <div class="admin-section-header">
+            <h2>5. Galería Multimedia</h2>
+            <div style="display:flex;gap:10px;">
+              <button class="btn btn-outline-white btn-sm" onclick="addGalleryItem()">
+                <i data-lucide="plus"></i> Agregar Foto
+              </button>
+              <button class="btn btn-cyan btn-sm" onclick="saveGallery()">Guardar Galería</button>
+            </div>
+          </div>
+          <div id="adminGalleryList"></div>
+        </section>
+
+        <!-- 6. TESTIMONIOS -->
+        <section class="admin-section" id="sec-testimonios" style="padding:32px 0;">
+          <div class="admin-section-header">
+            <h2>6. Testimonios de la Comunidad</h2>
+            <button class="btn btn-cyan btn-sm" onclick="saveTestimonials()">Guardar Testimonios</button>
+          </div>
+          <div id="adminTestimonialsList"></div>
+        </section>
+
+        <!-- 7. FAQs -->
+        <section class="admin-section" id="sec-faqs" style="padding:32px 0;">
+          <div class="admin-section-header">
+            <h2>7. Preguntas Frecuentes</h2>
+            <button class="btn btn-cyan btn-sm" onclick="saveFAQs()">Guardar Preguntas</button>
+          </div>
+          <div id="adminFAQsList"></div>
+        </section>
+
+      </div>
+    </div>
+  </main>
+
+  <script src="assets/js/data.js"></script>
+  <script src="assets/js/admin.js"></script>
+</body>
+</html>
+

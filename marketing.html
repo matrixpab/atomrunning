@@ -1,0 +1,676 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kit de Marketing & Contenidos | ATOM Club de Running</title>
+  
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <style>
+    :root {
+      --bg-card: var(--bg-navy-card);
+    }
+    body {
+      background: #000B14;
+      padding-bottom: 80px;
+    }
+    .mkt-header {
+      background: rgba(0, 18, 32, 0.95);
+      border-bottom: 1px solid var(--border-subtle);
+      padding: 24px 0;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      backdrop-filter: blur(16px);
+    }
+    .mkt-tabs {
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+      margin: 32px 0 24px 0;
+      border-bottom: 1px solid var(--border-subtle);
+      padding-bottom: 16px;
+    }
+    .mkt-tab-btn {
+      background: var(--bg-card);
+      border: 1px solid var(--border-subtle);
+      color: var(--text-muted);
+      font-family: var(--font-display);
+      font-size: 0.95rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      padding: 12px 24px;
+      border-radius: var(--radius-full);
+      cursor: pointer;
+      transition: var(--transition-smooth);
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .mkt-tab-btn:hover, .mkt-tab-btn.active {
+      background: var(--cyan-primary);
+      color: var(--bg-primary);
+      border-color: var(--cyan-primary);
+      box-shadow: 0 0 18px var(--cyan-glow);
+    }
+    .mkt-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-lg);
+      padding: 28px;
+      margin-bottom: 24px;
+      position: relative;
+      transition: var(--transition-smooth);
+    }
+    .mkt-card:hover {
+      border-color: rgba(0, 240, 255, 0.35);
+      box-shadow: 0 12px 30px rgba(0, 240, 255, 0.08);
+    }
+    .mkt-badge-row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 14px;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+    .copy-btn {
+      background: rgba(0, 240, 255, 0.1);
+      border: 1px solid var(--cyan-primary);
+      color: var(--cyan-primary);
+      padding: 8px 16px;
+      border-radius: var(--radius-md);
+      font-size: 0.825rem;
+      font-weight: 700;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      transition: var(--transition-smooth);
+    }
+    .copy-btn:hover {
+      background: var(--cyan-primary);
+      color: var(--bg-primary);
+    }
+    .copy-btn.copied {
+      background: #10B981;
+      border-color: #10B981;
+      color: #FFFFFF;
+    }
+    .script-box {
+      background: rgba(0, 18, 32, 0.7);
+      border-left: 3px solid var(--cyan-primary);
+      padding: 18px;
+      border-radius: 0 var(--radius-md) var(--radius-md) 0;
+      margin: 16px 0;
+      font-size: 0.95rem;
+      line-height: 1.6;
+      color: #E2E8F0;
+    }
+    .scene-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 12px;
+      margin-bottom: 10px;
+      font-size: 0.9rem;
+      color: #CBD5E1;
+    }
+    .scene-item strong {
+      color: var(--cyan-light);
+      min-width: 90px;
+    }
+    .calendar-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 20px;
+      background: var(--bg-card);
+      border-radius: var(--radius-lg);
+      overflow: hidden;
+      border: 1px solid var(--border-subtle);
+    }
+    .calendar-table th, .calendar-table td {
+      padding: 18px 20px;
+      text-align: left;
+      border-bottom: 1px solid var(--border-subtle);
+    }
+    .calendar-table th {
+      background: rgba(0, 18, 32, 0.9);
+      color: var(--cyan-primary);
+      font-family: var(--font-display);
+      text-transform: uppercase;
+      font-size: 0.9rem;
+      letter-spacing: 0.05em;
+    }
+    .calendar-table tr:hover td {
+      background: rgba(0, 240, 255, 0.03);
+    }
+  </style>
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="mkt-header">
+    <div class="container" style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:16px;">
+      <div style="display:flex;align-items:center;gap:14px;">
+        <img src="assets/img/logos/atom-emblem.svg" alt="Logo" style="height:48px;width:48px;border-radius:10px;" />
+        <div>
+          <h1 style="font-size:1.45rem;margin:0;">Centro de Marketing & Redes · <span style="color:var(--cyan-primary)">ATOM</span></h1>
+          <div style="font-size:0.85rem;color:#94A3B8;">Guiones, publicaciones y calendario editorial listo para usar</div>
+        </div>
+      </div>
+
+      <div style="display:flex;gap:12px;">
+        <a href="index.html" class="btn btn-outline-white btn-sm">
+          <i data-lucide="arrow-left" style="width:16px;height:16px;"></i> Volver a la Web
+        </a>
+        <a href="admin.html" class="btn btn-cyan btn-sm">
+          <i data-lucide="settings" style="width:16px;height:16px;"></i> Panel CMS
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- MAIN CONTAINER -->
+  <main class="container">
+    <div class="mkt-tabs">
+      <button class="mkt-tab-btn active" onclick="switchMktTab('reels')">
+        <i data-lucide="video"></i> 10 Ideas de Reels
+      </button>
+      <button class="mkt-tab-btn" onclick="switchMktTab('guiones')">
+        <i data-lucide="mic"></i> 10 Guiones para Videos
+      </button>
+      <button class="mkt-tab-btn" onclick="switchMktTab('posts')" style="display:inline-flex;align-items:center;gap:8px;">
+        <img src="assets/img/logos/instagram.svg" alt="Instagram" style="width:16px;height:16px;border-radius:3px;" /> 15 Publicaciones Feed
+      </button>
+      <button class="mkt-tab-btn" onclick="switchMktTab('calendario')">
+        <i data-lucide="calendar"></i> Calendario Mensual
+      </button>
+    </div>
+
+    <!-- SECCIÓN 1: REELS -->
+    <section id="tab-reels" class="mkt-content-section">
+      <h2 style="font-size:1.6rem;margin-bottom:12px;">10 Propuestas de Reels para Instagram</h2>
+      <p style="margin-bottom:28px;">Videos dinámicos para captar nuevos corredores en La Dormida, La Paz y la provincia de Mendoza.</p>
+      <div id="reelsList"></div>
+    </section>
+
+    <!-- SECCIÓN 2: GUIONES -->
+    <section id="tab-guiones" class="mkt-content-section" style="display:none;">
+      <h2 style="font-size:1.6rem;margin-bottom:12px;">10 Guiones Redactados (15 a 40 segundos)</h2>
+      <p style="margin-bottom:28px;">Guiones listos para ser grabados a cámara por el Prof. César Vergel o narrados en voz en off.</p>
+      <div id="guionesList"></div>
+    </section>
+
+    <!-- SECCIÓN 3: POSTS FEED -->
+    <section id="tab-posts" class="mkt-content-section" style="display:none;">
+      <h2 style="font-size:1.6rem;margin-bottom:12px;">15 Ideas de Publicaciones con Copys y Hashtags</h2>
+      <p style="margin-bottom:28px;">Hacé clic en "Copiar Copy Completo" y pegalo directamente en la app de Instagram.</p>
+      <div id="postsList"></div>
+    </section>
+
+    <!-- SECCIÓN 4: CALENDARIO -->
+    <section id="tab-calendario" class="mkt-content-section" style="display:none;">
+      <h2 style="font-size:1.6rem;margin-bottom:12px;">Calendario Editorial Mensual Estructurado</h2>
+      <p style="margin-bottom:24px;">Distribución estratégica semanal de contenido para mantener la cuenta activa sin saturar.</p>
+      
+      <div style="overflow-x:auto;">
+        <table class="calendar-table">
+          <thead>
+            <tr>
+              <th>Semana</th>
+              <th>Lunes (Motivación/Sede)</th>
+              <th>Miércoles (Reel Técnico)</th>
+              <th>Viernes (Comunidad/Historias)</th>
+              <th>Fin de Semana (Salidas & Fondos)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Semana 1</strong></td>
+              <td>Post Feed: Convocatoria "Empezá a correr desde cero"</td>
+              <td>Reel: "Tu primer día vs. 3 meses después"</td>
+              <td>Historias: Encuesta interactiva de horarios en La Dormida</td>
+              <td>Post: Fotos del fondo de sábado y paisajes esteños</td>
+            </tr>
+            <tr>
+              <td><strong>Semana 2</strong></td>
+              <td>Post Feed: "3 Errores al elegir zapatillas"</td>
+              <td>Reel: Tips del Profe César para no lesionarse</td>
+              <td>Post: Convocatoria específica sede La Paz</td>
+              <td>Reel: POV Atardecer corriendo en equipo</td>
+            </tr>
+            <tr>
+              <td><strong>Semana 3</strong></td>
+              <td>Post Feed: "Importancia del Core en runners"</td>
+              <td>Reel: "¿Por qué no deberías correr solo?"</td>
+              <td>Post Feed: Testimonio de corredora en meta</td>
+              <td>Historias en Vivo: Salida a dunas de Santa Rosa</td>
+            </tr>
+            <tr>
+              <td><strong>Semana 4</strong></td>
+              <td>Post Feed: Humor / Meme runner con el grupo</td>
+              <td>Reel: Asfalto vs. Dunas de trail</td>
+              <td>Post: Invitación a conocer la web oficial</td>
+              <td>Reel: "Familia ATOM: Un minuto de motivación"</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+  </main>
+
+  <script>
+    const REELS_DATA = [
+      {
+        num: 1,
+        title: "Tu primer día en ATOM vs. 3 meses después",
+        goal: "Derribar el miedo a arrancar de cero y mostrar progreso real.",
+        scenes: [
+          { time: "0:00 - 0:03", desc: "Corredor novato atándose las zapatillas con cara de duda." },
+          { time: "0:03 - 0:08", desc: "Caminata y trote suave con indicaciones amables del Profe César." },
+          { time: "0:08 - 0:15", desc: "Transición rápida a carrera de calle: cruzando el arco de meta con la remera del club y una sonrisa." }
+        ],
+        textOnScreen: "Día 1: 'No sé si llego a 500m' ➡️ Mes 3: '¡Completé mis primeros 10K con amigos!'",
+        sound: "Beat electrónico progresivo motivacional / remix trending.",
+        cta: "El primer paso empieza hoy. Escribinos al WhatsApp del perfil y probá tu primera clase."
+      },
+      {
+        num: 2,
+        title: "El Desafío Ñacuñán: Correr sobre las dunas de Santa Rosa",
+        goal: "Posicionar a ATOM en trail running y destacar la identidad mendocina.",
+        scenes: [
+          { time: "0:00 - 0:05", desc: "Tomas épicas en cámara lenta de pisadas levantando arena en las dunas." },
+          { time: "0:05 - 0:12", desc: "El equipo trotando entre algarrobos bajo el sol del atardecer." },
+          { time: "0:12 - 0:20", desc: "Chocada de manos en la cima de una duna con la bandera de ATOM." }
+        ],
+        textOnScreen: "Así se entrena en el este de Mendoza. Tierra, dunas y corazón.",
+        sound: "Beat cinematográfico con percusión intensa.",
+        cta: "¿Te animás al trail? Sumate al grupo de aventura los sábados."
+      },
+      {
+        num: 3,
+        title: "¿Por qué no deberías correr solo?",
+        goal: "Fomentar la pertenencia comunitaria y el compañerismo.",
+        scenes: [
+          { time: "0:00 - 0:04", desc: "Corredor solitario mirando su reloj con gesto de aburrimiento y pesadez." },
+          { time: "0:04 - 0:12", desc: "Se une al pelotón de ATOM: risas, sincronía de pasos y aliento mutuo." },
+          { time: "0:12 - 0:18", desc: "Tercer tiempo: estirando en ronda e hidratándose con buena onda." }
+        ],
+        textOnScreen: "Solo vas más rápido; en equipo llegás más lejos. Corré con ATOM.",
+        sound: "Voz inspiracional en tendencia sobre guitarra acústica.",
+        cta: "Sedes en La Dormida y La Paz. Sumate desde el enlace de la bio."
+      },
+      {
+        num: 4,
+        title: "3 Tips del Profe César para no lesionarte al arrancar",
+        goal: "Autoridad técnica y valor formativo profesional.",
+        scenes: [
+          { time: "0:00 - 0:06", desc: "Prof. César Vergel explicando a cámara: Tip 1, no talonear excesivamente." },
+          { time: "0:06 - 0:14", desc: "Tip 2, 8 minutos de movilidad dinámica previa antes de correr." },
+          { time: "0:14 - 0:22", desc: "Tip 3, sentadillas y fuerza de core para proteger rodillas." }
+        ],
+        textOnScreen: "1: No caigas de talón / 2: Calentamiento dinámico / 3: Fuerza funcional",
+        sound: "Voz limpia del entrenador con música suave Lo-Fi.",
+        cta: "Guardá este reel para tu próximo entrenamiento y seguinos para más tips."
+      },
+      {
+        num: 5,
+        title: "POV: Entrenando al atardecer en La Dormida",
+        goal: "Belleza visual, orgullo esteño y estética deportiva.",
+        scenes: [
+          { time: "0:00 - 0:06", desc: "Cámara en movimiento dentro del pelotón en camino rural." },
+          { time: "0:06 - 0:14", desc: "El cielo tiñéndose de naranja y violeta con las sombras de los corredores." },
+          { time: "0:14 - 0:20", desc: "Llegada al punto de encuentro y elongación colectiva." }
+        ],
+        textOnScreen: "El mejor momento del día no se explica: se corre. 🌅 Sede La Dormida.",
+        sound: "Canción indie electrónica cálida / ambient chill.",
+        cta: "¿Correr de mañana o al atardecer? Dejanos tu voto en comentarios."
+      },
+      {
+        num: 6,
+        title: "¿Qué hay en la mochila de un corredor de ATOM?",
+        goal: "Curiosidad, cercanía y preparación para entrenar.",
+        scenes: [
+          { time: "0:00 - 0:15", desc: "Desembalaje dinámico en cámara rápida: botellita de agua, reloj GPS, gorra, zapatillas y la remera oficial de ATOM." }
+        ],
+        textOnScreen: "El kit básico para sumar kilómetros con nosotros.",
+        sound: "Sonido ASMR deportivo y beat moderno.",
+        cta: "Prepará tus zapas; del plan nos encargamos nosotros. Escribinos."
+      },
+      {
+        num: 7,
+        title: "Diferencia entre correr en asfalto y correr en dunas",
+        goal: "Demostrar conocimiento sobre el terreno específico del club.",
+        scenes: [
+          { time: "0:00 - 0:08", desc: "Plano dividido: asfalto (reactividad rápida) vs. duna (amortiguación profunda)." },
+          { time: "0:08 - 0:16", desc: "Explicación de cómo cambia la zancada y el ritmo de respiración." }
+        ],
+        textOnScreen: "Asfalto: Velocidad y cadencia / Dunas: Potencia y resistencia.",
+        sound: "Pop rítmico moderno.",
+        cta: "¿Cuál es tu terreno favorito? Votá abajo."
+      },
+      {
+        num: 8,
+        title: "El momento de cruzar la meta: emociones reales",
+        goal: "Emoción deportiva, deseo de superación y gloria compartida.",
+        scenes: [
+          { time: "0:00 - 0:18", desc: "Recopilación de miradas, sonrisas y festejos de miembros de ATOM cruzando arcos de llegada y recibiendo su medalla." }
+        ],
+        textOnScreen: "El segundo exacto donde cada gota de sudor vale la pena.",
+        sound: "Crescendo orquestal moderno inspirador.",
+        cta: "¿Qué carrera querés correr este año? Te preparamos para lograrlo."
+      },
+      {
+        num: 9,
+        title: "Desmintiendo mitos del running",
+        goal: "Resolver objeciones de quienes dudan en sumarse.",
+        scenes: [
+          { time: "0:00 - 0:07", desc: "Mito 1: 'Tengo que estar en forma' ❌ -> Realidad: 'Entrenás para ponerte en forma' ✅" },
+          { time: "0:07 - 0:15", desc: "Mito 2: 'Correr arruina las rodillas' ❌ -> Realidad: 'Con buena técnica las fortalece' ✅" }
+        ],
+        textOnScreen: "Que los mitos no te queden de excusa.",
+        sound: "Audio trending humorístico.",
+        cta: "¿Qué otra duda tenés? Dejanos tu comentario."
+      },
+      {
+        num: 10,
+        title: "Un minuto de motivación: La familia ATOM",
+        goal: "Posicionamiento de marca y sentido de comunidad.",
+        scenes: [
+          { time: "0:00 - 0:25", desc: "Montaje cinematográfico de pasadas, choques de manos, risas nocturnas y el grito de cierre del equipo." }
+        ],
+        textOnScreen: "Mucho más que correr. Una comunidad. ATOM Club de Running.",
+        sound: "Voz en off épica con fondo instrumental potente.",
+        cta: "Sumate a nuestros entrenamientos en La Dormida y La Paz."
+      }
+    ];
+
+    const GUIONES_DATA = [
+      {
+        id: 1,
+        title: "Guion 1: ¿Pensás que no podés correr? (25 seg)",
+        time: "25 segundos",
+        voice: "Prof. César Vergel o locución cercana",
+        script: "¿Pensás que para sumarte a un club de running tenés que ser un atleta de elite? En ATOM empezamos caminando. Te enseñamos a regular tu respiración, a apoyar el pie correctamente y a disfrutar del proceso sin dolor. En dos meses vas a estar haciendo lo que creías imposible. No corrés solo: corrés con ATOM. Escribinos y sumate a tu sede más cercana."
+      },
+      {
+        id: 2,
+        title: "Guion 2: El poder del grupo (20 seg)",
+        time: "20 segundos",
+        voice: "Corredor del club en primera persona",
+        script: "Cuando tus piernas te dicen que pares, el aliento de la persona que corre al lado tuyo te dice que podés un kilómetro más. Eso es ATOM: energía que se contagia y kilómetros que se comparten. Entrenamos en La Dormida y La Paz. Vení a conocer tu equipo."
+      },
+      {
+        id: 3,
+        title: "Guion 3: La previa de carrera (30 seg)",
+        time: "30 segundos",
+        voice: "Voz en off con música de expectativa",
+        script: "Esa mezcla de nervios y emoción en la noche previa a una carrera... Preparar la remera del club, fijar el número en el pecho y saber que mañana viaja todo el equipo junto. Porque cruzar la meta es hermoso, pero vivirlo en comunidad no tiene precio. Sumate a ATOM y viví las carreras con nosotros."
+      },
+      {
+        id: 4,
+        title: "Guion 4: ¿Por qué entrenar fuerza si sos corredor? (30 seg)",
+        time: "30 segundos",
+        voice: "Prof. César Vergel (Técnico)",
+        script: "Si solo sumás kilómetros y no fortalecés tus músculos, tus articulaciones sufren el impacto. En ATOM dedicamos días específicos a la fuerza funcional y al trabajo de core para que tus rodillas, tobillos y espalda estén blindados contra lesiones. Corré con método, corré seguro."
+      },
+      {
+        id: 5,
+        title: "Guion 5: De caminar a mis primeros 5K (25 seg)",
+        time: "25 segundos",
+        voice: "Testimonio alumno novato",
+        script: "Cuando arranqué no podía trotar dos cuadras seguidas sin ahogarme. Me daba vergüenza sumarme a un grupo, pero en ATOM me recibieron de diez. El profe me armó un plan progresivo y el mes pasado completé mis primeros cinco kilómetros sin parar. Si yo pude, vos también podés."
+      },
+      {
+        id: 6,
+        title: "Guion 6: El secreto del trail en el Este (30 seg)",
+        time: "30 segundos",
+        voice: "Voz en off con tomas de dunas",
+        script: "El trail running no te pide récords de reloj; te pide concentración, respeto por la tierra y ganas de sentirte vivo. En Santa Rosa y La Paz tenemos circuitos naturales increíbles para sumar desnivel y respirar aire puro. Sumate a nuestras salidas de aventura los sábados."
+      },
+      {
+        id: 7,
+        title: "Guion 7: ¿Qué necesitás para tu primera clase? (20 seg)",
+        time: "20 segundos",
+        voice: "Rápido y directo",
+        script: "Zapatillas cómodas para trotar, ropa ligera, tu botella de agua y muchas ganas de arrancar. No necesitás nada más. Escribinos al enlace de nuestro perfil y te enviamos los horarios de esta semana para tu primera clase de bienvenida."
+      },
+      {
+        id: 8,
+        title: "Guion 8: La meta del Desafío Ñacuñán (30 seg)",
+        time: "30 segundos",
+        voice: "Épico / Emocional",
+        script: "21 kilómetros entre dunas y calor no son un paseo. Pero cuando venís cansado y ves a tus compañeros esperándote en el arco de llegada con la bandera de ATOM en alto y alentándote a los gritos, te olvidás del dolor y te sentís invencible. Formá parte de este equipo."
+      },
+      {
+        id: 9,
+        title: "Guion 9: Constancia mata talento (25 seg)",
+        time: "25 segundos",
+        voice: "Motivacional",
+        script: "No hace falta haber nacido con dones deportivos. La disciplina de venir cada semana, con frío o calor, supera cualquier excusa. En ATOM no premiamos al más rápido: premiamos al que no se rinde y al que alienta al compañero. Te esperamos en el próximo entrenamiento."
+      },
+      {
+        id: 10,
+        title: "Guion 10: Nuestra casa: La Dormida y La Paz (30 seg)",
+        time: "30 segundos",
+        voice: "Institucional emotivo",
+        script: "Representamos con orgullo a nuestra gente y a nuestra tierra. El este mendocino tiene pasión, fuerza y ganas de crecer. Somos ATOM Club de Running. Running, salud y comunidad. Conocé nuestra nueva web oficial y sumate hoy."
+      }
+    ];
+
+    const POSTS_DATA = [
+      {
+        id: 1,
+        title: "Post 1: ¿Tenés ganas de empezar a correr y no sabés por dónde arrancar?",
+        type: "Convocatoria / Comercial",
+        copy: `¿Tenés ganas de empezar a correr pero no sabés cómo arrancar sin frustrarte o lesionarte? 🏃‍♂️✨\n\nEn ATOM tenemos un grupo de Running Inicial pensado 100% para vos. Con la planificación progresiva del Prof. César Vergel (@cesarvergel1986), aprendés a regular tu respiración, adoptar buena postura y avanzar paso a paso, rodeado de un grupo que te acompaña en cada metro.\n\n📍 Sedes oficiales:\n• La Dormida (Santa Rosa)\n• La Paz\n\n💬 Comentá "QUIERO" o hacé clic en el enlace de nuestra biografía para coordinar tu primera clase de bienvenida sin compromiso.\n\n#AtomRunning #ClubDeRunning #LaDormida #LaPazMendoza #RunningMendoza #EmpezarACorrer #SaludYComunidad`,
+        visual: "Fotografía cálida y sonriente del grupo inicial haciendo movilidad articular en círculo."
+      },
+      {
+        id: 2,
+        title: "Post 2: Desafío Ñacuñán Terra Trail: Dejamos el corazón en las dunas",
+        type: "Comunidad / Carreras",
+        copy: `¡Qué orgullo ver los colores de ATOM en las dunas de Santa Rosa! 🏜️🔥\n\nQueremos felicitar a cada uno de nuestros atletas que dijeron presente en una nueva edición del Desafío Ñacuñán Terra Trail, especialmente a Viviana Fernández en los exigentes 21K y a todo el equipo que copó los senderos de arena y algarrobos.\n\nLas medallas se van a retirar a las carreras, pero se ganan en cada entrenamiento de la semana. ¡Gracias por dejar el corazón en cada kilómetro!\n\n¿Querés preparar tu próxima carrera con nosotros? Sumate al Team ATOM.\n\n#DesafioÑacuñan #TerraTrail #TrailMendoza #SantaRosaMendoza #TeamAtom #RunningDeAventura #MendozaCorre`,
+        visual: "Carrusel de fotos: atletas en plena arena, llegada a meta y foto grupal con trofeos y medallas."
+      },
+      {
+        id: 3,
+        title: "Post 3: 3 Errores comunes al elegir tus zapatillas para correr",
+        type: "Educativo / Técnico",
+        copy: `No elijas tus zapatillas por la moda ni por el color. Tu calzado es tu herramienta de salud más importante. 👟⚠️\n\n1️⃣ Comprarlas muy justas: al correr el pie se dilata. Necesitás medio talle o un talle extra para evitar uñas negras en las bajadas.\n2️⃣ Usar zapatillas de suela lisa en senderos o arena: vas a patinar y sobrecargar gemelos. Para el trail necesitás taqueado con agarre.\n3️⃣ Correr con calzado vencido: después de los 600-800 km, la amortiguación pierde sus propiedades aunque por fuera se vea 'linda'.\n\n¿Querés que el profe revise tus zapas? Te asesoramos en tu próximo entrenamiento. Guardá este post para cuando vayas a renovar calzado.\n\n#TipsRunning #CalzadoRunning #ZapatillasDeportivas #ProfesorVergel #EntrenamientoInteligente #ATOMMendoza`,
+        visual: "Infografía limpia con 3 fotos de calzado y tildes/cruces explicativas."
+      },
+      {
+        id: 4,
+        title: "Post 4: ¿Qué significa correr con ATOM?",
+        type: "Identidad / Branding",
+        copy: `Correr con ATOM significa que nunca más vas a correr con la sensación de soledad. 🌅\n\nSignifica que siempre va a haber una mano extendida para alentarte en la última pasada, una sonrisa cuando llegues cansado después de trabajar y un festejo sincero cuando bajes tus marcas personales.\n\nNo somos un gimnasio convencional; somos una familia deportiva que crece kilómetro a kilómetro en el este mendocino.\n\nNo corrés solo. Corrés con ATOM.\n\n#FilosofiaAtom #EspirituDeEquipo #NoCorresSolo #LaDormida #LaPaz #Mendoza #ComunidadRunner`,
+        visual: "Silueta potente del pelotón corriendo al atardecer con el cielo anaranjado de fondo."
+      },
+      {
+        id: 5,
+        title: "Post 5: Cronograma semanal de entrenamientos",
+        type: "Informativo / Práctico",
+        copy: `¡Organizá tu semana deportiva con ATOM! 🗓️⚡\n\n📍 Sede La Dormida (Santa Rosa):\n• Lunes, Miércoles y Viernes — 19:30 a 21:00 hs.\n• Puntos de encuentro: Plaza Central y circuitos pedestres.\n\n📍 Sede La Paz:\n• Martes y Jueves — 19:30 a 21:00 hs.\n• Puntos de encuentro: Pista atlética y polideportivo.\n\n🏃‍♂️ Salidas especiales de Trail & Dunas:\n• Sábados por la mañana.\n\nTodos los grupos divididos por nivel bajo la dirección del Prof. César Vergel. Escribinos por WhatsApp y vení a probar tu clase.\n\n#HorariosRunning #LaDormidaRunning #LaPazRunning #EntrenamientoMendoza #TeamAtom`,
+        visual: "Placa gráfica institucional con colores Navy y Cyan detallando días y puntos de encuentro."
+      },
+      {
+        id: 6,
+        title: "Post 6: De la caminata a los 10K: Historia de superación",
+        type: "Testimonio / Conversión",
+        copy: `"El primer día pensé que no iba a aguantar ni 300 metros. Hoy tengo colgadas tres medallas de 10 kilómetros en mi casa". 🏅👏\n\nLas historias reales de nuestros integrantes son el motor de este club. No importa de dónde arranques ni cuánto tiempo lleves sin hacer deporte: con paciencia, constancia y la guía adecuada, los resultados llegan.\n\n¿Cuál es la meta que querés cumplir este año? Te ayudamos a conquistarla.\n\n#TestimonioReal #SuperacionPersonal #MetasCumplidas #CorredoresReales #AtomClubDeRunning`,
+        visual: "Retrato natural de una corredora del club sonriendo con su medalla al cuello."
+      },
+      {
+        id: 7,
+        title: "Post 7: La importancia del Core en los corredores",
+        type: "Preparación Física",
+        copy: `¿Sabías que la fuerza para mantener el ritmo en los últimos kilómetros no sale solo de tus piernas? 🧱🔥\n\nLa zona media (core: abdomen, lumbares y glúteos) es el puente que transfiere la fuerza en cada zancada. Cuando el core se fatiga, la postura se cae, el impacto sobre las rodillas se multiplica y tu velocidad disminuye.\n\nPor eso en ATOM no solo trotamos: entrenamos fuerza funcional y propiocepción guiada por el Prof. César Vergel. ¿Hacés ejercicios de core en tu semana? Contanos en comentarios.\n\n#FuerzaParaRunners #CoreTraining #PrevencionDeLesiones #TecnicaDeCarrera #ProfesorCesarVergel`,
+        visual: "Video corto o carrusel de planchas y ejercicios de fuerza en el césped."
+      },
+      {
+        id: 8,
+        title: "Post 8: El mejor antídoto para el cansancio mental de los lunes",
+        type: "Motivación",
+        copy: `Tuviste un día largo en el trabajo, la cabeza te explota y la tentación del sillón es enorme. 🧠🛋️\n\nPonete las zapatillas, acercate al punto de encuentro y corré 40 minutos con el grupo. Te prometemos que a los 10 minutos la mente se despeja, la pesadez desaparece y te vas a tu casa con una energía renovada.\n\nEl running no te saca energía: te la devuelve. ¡Nos vemos hoy en La Dormida!\n\n#LunesMotivacional #SaludMental #CorrerParaDespejar #EnergiaPositiva #AtomRunning`,
+        visual: "Grupo estirando de noche, sonriendo y charlando después de entrenar."
+      },
+      {
+        id: 9,
+        title: "Post 9: Circuito Running 360° Santa Rosa: Podios y orgullo",
+        type: "Competencia",
+        copy: `¡Gran presencia de ATOM en el Circuito Running 360° de Santa Rosa! 🏆💥\n\nFelicitaciones a Aldana Urquiza por su podio en los 10K y a cada uno de nuestros atletas que representaron los colores con tanta garra. Cada carrera confirma que el trabajo planificado da sus frutos.\n\nGracias a las familias que van a hacer el aguante al costado del camino y al aliento incondicional del equipo.\n\n#Circuito360 #SantaRosaMendoza #PodioAtom #AtletismoMendoza #PasiónPorCorrer`,
+        visual: "Foto en el podio con copa/trofeo y foto del grupo levantando los brazos en meta."
+      },
+      {
+        id: 10,
+        title: "Post 10: Claves de hidratación en Mendoza",
+        type: "Salud / Educación",
+        copy: `El calor y el aire seco de nuestra provincia exigen hidratarse con inteligencia. 💧☀️\n\n1. No esperes a tener sed: la sed ya es un síntoma leve de deshidratación. Tomá pequeños sorbos de agua durante todo el día.\n2. Sumá electrolitos en tiradas de más de 60 minutos para reponer el sodio que perdés con el sudor.\n3. Pesate antes y después de fondos largos para saber cuánto líquido necesitás reponer.\n\nCuidá tu cuerpo para poder rendir al máximo. ¡A hidratarse bien!\n\n#HidratacionRunner #SaludYDeporte #ClimaMendoza #CuidadoDelAtleta #AtomClub`,
+        visual: "Gráfico con diseño deportivo de botellita y 3 consejos numerados."
+      },
+      {
+        id: 11,
+        title: "Post 11: Sábado de senderos y dunas",
+        type: "Trail / Estilo de vida",
+        copy: `Cambiar el ruido de los autos por el viento entre los algarrobos y el suelo blando de las dunas. 🌾👟\n\nNuestras salidas de sábado son el momento perfecto para desconectar de la rutina semanal y conectar con la naturaleza de nuestro este mendocino.\n\nNo importa si vas rápido o caminás en las subidas: lo importante es disfrutar del camino. ¿Te sumás al próximo fondo de aventura?\n\n#TrailEsteño #DunasDeMendoza #ReservaÑacuñan #SenderismoMendoza #AventuraAtom`,
+        visual: "Toma panorámica con el pelotón trotando en fila india por un sendero de tierra."
+      },
+      {
+        id: 12,
+        title: "Post 12: El trabajo del entrenador: planificar para cuidar",
+        type: "Autoridad profesional",
+        copy: `Detrás de cada serie, de cada cambio de ritmo y de cada descanso hay una planificación biomecánica y fisiológica. 📋⏱️\n\nEl Prof. César Vergel (@cesarvergel1986) evalúa el progreso de cada corredor para que el volumen de kilómetros sea el adecuado. En ATOM no creemos en matarse en un entrenamiento para quedar lesionado dos semanas; creemos en la progresión inteligente y sustentable en el tiempo.\n\nEntrená con profesionales. Cuidá tu salud.\n\n#DireccionTecnica #EducacionFisica #ProfesorCesarVergel #MetodologiaDeportiva #AtomClub`,
+        visual: "El entrenador con cronómetro en mano dando indicaciones técnicas a dos integrantes."
+      },
+      {
+        id: 13,
+        title: "Post 13: Cuando el Profe dice 'última pasada y aflojamos'...",
+        type: "Humor / Meme Runner",
+        copy: `...y de repente te clava 400 metros más a ritmo de competencia 😂💀.\n\nPero qué lindo es cruzar la última pasada sabiendo que dejaste todo, chocar puños con tus compañeros y tirarte al pasto a recuperar el aliento.\n\nEtiquetá a tu compañero de pasadas que siempre intenta negociar el ritmo con el Profe.\n\n#HumorRunner #MemeDeportivo #PasadasDeVelocidad #LaUltimaYNosVamos #CosasDeRunners`,
+        visual: "Meme con fotos reales de integrantes tirados en el pasto sonriendo y recuperando aire."
+      },
+      {
+        id: 14,
+        title: "Post 14: ¡Comunidad de La Paz, nos vemos este martes y jueves!",
+        type: "Convocatoria Local",
+        copy: `¡Atención La Paz! 📍🏃‍♀️\n\nNuestra sede no para de sumar energía. Si vivís en La Paz y querés sumarte a un grupo donde la buena vibra y las ganas de mejorar son regla, ¡este es tu lugar!\n\nEntrenamos martes y jueves desde las 19:30 hs. No necesitás experiencia previa: tenemos grupo inicial y grupo intermedio/avanzado.\n\nMandanos un mensaje privado o hacé clic en el link de la bio y te sumamos hoy al grupo.\n\n#LaPazMendoza #RunningLaPaz #ComunidadEsteña #DeporteMendoza #TeamAtomLaPaz`,
+        visual: "Foto grupal sonriente de la sede La Paz con el polideportivo de fondo."
+      },
+      {
+        id: 15,
+        title: "Post 15: ¡Lanzamos nuestra Web Oficial!",
+        type: "Lanzamiento / Tráfico",
+        copy: `¡Tenemos una gran noticia para toda la comunidad! 🚀🌐\n\nLanzamos la web oficial de ATOM Club de Running: atomclubderunning.com.ar.\n\nAhora podés consultar desde tu celular:\n✅ Todas nuestras modalidades de entrenamiento\n✅ Horarios actualizados en La Dormida y La Paz\n✅ Próximas carreras y resultados del club\n✅ Galería multimedia completa con fotos de alta calidad\n✅ Botón directo para coordinar tu primera clase por WhatsApp\n\nHacé clic en el enlace de nuestra biografía y vení a conocer nuestra nueva casa digital.\n\n#WebOficial #AtomClubDeRunning #LaDormida #LaPaz #MendozaCorre #RunningArgentino`,
+        visual: "Mockup elegante de la web abierta en celular y laptop con el logo y el botón de WhatsApp destacado."
+      }
+    ];
+
+    function renderReels() {
+      const container = document.getElementById("reelsList");
+      container.innerHTML = REELS_DATA.map(r => `
+        <div class="mkt-card">
+          <div class="mkt-badge-row">
+            <span class="badge-atom">Reel #${r.num} · ${r.goal}</span>
+            <button class="copy-btn" onclick="copyText(this, \`${r.title}\\n\\nObjetivo: ${r.goal}\\n\\nTexto en pantalla: ${r.textOnScreen}\\n\\nAudio sugerido: ${r.sound}\\n\\nCTA: ${r.cta}\`)">
+              <i data-lucide="copy" style="width:14px;height:14px;"></i> Copiar Guion Reel
+            </button>
+          </div>
+          <h3 style="font-size:1.35rem;margin-bottom:12px;color:var(--text-white);">${r.title}</h3>
+          
+          <div style="margin:16px 0;">
+            <div style="font-weight:700;color:var(--cyan-light);margin-bottom:8px;font-size:0.9rem;">Escenas Sugeridas:</div>
+            ${r.scenes.map(s => `
+              <div class="scene-item">
+                <strong>[${s.time}]</strong>
+                <span>${s.desc}</span>
+              </div>
+            `).join("")}
+          </div>
+
+          <div class="script-box">
+            <strong>Texto en Pantalla:</strong> ${r.textOnScreen}<br/>
+            <strong>Música / Estilo Sonoro:</strong> ${r.sound}<br/>
+            <strong>Llamado a la Acción (CTA):</strong> ${r.cta}
+          </div>
+        </div>
+      `).join("");
+    }
+
+    function renderGuiones() {
+      const container = document.getElementById("guionesList");
+      container.innerHTML = GUIONES_DATA.map(g => `
+        <div class="mkt-card">
+          <div class="mkt-badge-row">
+            <span class="badge-coral">Guion #${g.id} · Duración: ${g.time}</span>
+            <button class="copy-btn" onclick="copyText(this, \`${g.script}\`)">
+              <i data-lucide="copy" style="width:14px;height:14px;"></i> Copiar Locución
+            </button>
+          </div>
+          <h3 style="font-size:1.3rem;margin-bottom:6px;color:var(--text-white);">${g.title}</h3>
+          <div style="font-size:0.85rem;color:var(--cyan-light);margin-bottom:14px;">Voz sugerida: ${g.voice}</div>
+          
+          <div class="script-box" style="font-size:1.05rem;font-style:italic;">
+            "${g.script}"
+          </div>
+        </div>
+      `).join("");
+    }
+
+    function renderPosts() {
+      const container = document.getElementById("postsList");
+      container.innerHTML = POSTS_DATA.map(p => `
+        <div class="mkt-card">
+          <div class="mkt-badge-row">
+            <span class="badge-atom">Post #${p.id} · ${p.type}</span>
+            <button class="copy-btn" onclick="copyText(this, \`${p.copy}\`)">
+              <i data-lucide="copy" style="width:14px;height:14px;"></i> Copiar Copy Completo
+            </button>
+          </div>
+          <h3 style="font-size:1.25rem;margin-bottom:8px;color:var(--text-white);">${p.title}</h3>
+          <div style="font-size:0.85rem;color:var(--coral-sunset);margin-bottom:14px;">
+            <strong>Concepto Visual:</strong> ${p.visual}
+          </div>
+          
+          <div class="script-box" style="white-space:pre-line;font-size:0.95rem;">
+            ${p.copy}
+          </div>
+        </div>
+      `).join("");
+    }
+
+    function switchMktTab(tabName) {
+      document.querySelectorAll(".mkt-tab-btn").forEach(b => b.classList.remove("active"));
+      event.currentTarget.classList.add("active");
+
+      document.querySelectorAll(".mkt-content-section").forEach(s => s.style.display = "none");
+      const target = document.getElementById("tab-" + tabName);
+      if (target) target.style.display = "block";
+    }
+
+    function copyText(btn, text) {
+      navigator.clipboard.writeText(text).then(() => {
+        const original = btn.innerHTML;
+        btn.innerHTML = `<i data-lucide="check" style="width:14px;height:14px;"></i> ¡Copiado!`;
+        btn.classList.add("copied");
+        if (typeof lucide !== "undefined") lucide.createIcons();
+        setTimeout(() => {
+          btn.innerHTML = original;
+          btn.classList.remove("copied");
+          if (typeof lucide !== "undefined") lucide.createIcons();
+        }, 2500);
+      });
+    }
+
+    document.addEventListener("DOMContentLoaded", () => {
+      renderReels();
+      renderGuiones();
+      renderPosts();
+      if (typeof lucide !== "undefined") lucide.createIcons();
+    });
+  </script>
+</body>
+</html>
+

@@ -1,0 +1,938 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <!-- Primary Meta Tags -->
+  <title>ATOM RUNNING | Eventos, Competencias y Comunidad · Mendoza</title>
+  <meta name="title" content="ATOM RUNNING | Eventos, Competencias y Comunidad · Mendoza" />
+  <meta name="description" content="Corremos juntos. Superamos límites. Comunidad de running de La Dormida y La Paz, Mendoza. Participación en la Media Maratón de Buenos Aires 21K, Desafío Ñacuñán y carreras provinciales." />
+  <meta name="keywords" content="atom running, club de running mendoza, eventos de running, media maraton buenos aires 2026, 21k buenos aires atom, desafio ñacuñan terra trail, la dormida running, la paz running, cesar vergel" />
+  <meta name="author" content="ATOM RUNNING" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://atomclubderunning.com.ar/" />
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://atomclubderunning.com.ar/" />
+  <meta property="og:title" content="ATOM RUNNING | Eventos, Competencias y Comunidad" />
+  <meta property="og:description" content="Corremos juntos. Superamos límites. Mirá la cobertura de ATOM en la Media Maratón de Buenos Aires 2026 y nuestras próximas competencias." />
+  <meta property="og:image" content="assets/img/eventos/ba21k/atom-ba21k-equipo-medallas.webp" />
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image" />
+  <meta property="twitter:url" content="https://atomclubderunning.com.ar/" />
+  <meta property="twitter:title" content="ATOM RUNNING | Eventos y Competencias" />
+  <meta property="twitter:description" content="Corremos juntos. Superamos límites. Experiencias y carreras de ATOM RUNNING." />
+  <meta property="twitter:image" content="assets/img/eventos/ba21k/atom-ba21k-equipo-medallas.webp" />
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/jpeg" href="assets/img/logo_atom.jpg" />
+  <link rel="apple-touch-icon" href="assets/img/logo_atom.jpg" />
+
+  <!-- Estilos CSS Deportivos Editoriales Premium -->
+  <link rel="stylesheet" href="assets/css/style.css" />
+
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <!-- Structured Data (Schema.org) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SportsClub",
+    "name": "ATOM RUNNING",
+    "alternateName": "ATOM Club de Running",
+    "url": "https://atomclubderunning.com.ar",
+    "logo": "https://atomclubderunning.com.ar/assets/img/logo_atom.jpg",
+    "image": "https://atomclubderunning.com.ar/assets/img/eventos/ba21k/atom-ba21k-equipo-medallas.webp",
+    "description": "Comunidad deportiva y equipo de entrenamiento de running y trail en La Dormida y La Paz, Mendoza, Argentina.",
+    "coach": {
+      "@type": "Person",
+      "name": "Prof. César Vergel",
+      "sameAs": "https://www.instagram.com/cesarvergel1986/"
+    },
+    "sameAs": [
+      "https://www.instagram.com/atomclubderunning/"
+    ],
+    "event": [
+      {
+        "@type": "SportsEvent",
+        "name": "Media Maratón de Buenos Aires 2026 - Participación ATOM RUNNING",
+        "startDate": "2026-08-23T08:00:00-03:00",
+        "location": {
+          "@type": "Place",
+          "name": "Bosques de Palermo",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Av. Figueroa Alcorta y Dorrego",
+            "addressLocality": "Buenos Aires",
+            "addressCountry": "AR"
+          }
+        }
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+
+  <!-- ==========================================================================
+       HEADER & NAVEGACIÓN LIMPIA Y ESPACIOSA
+       ========================================================================== -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="#hero" class="brand-wrapper">
+        <img src="assets/img/logos/atom-emblem.svg" alt="ATOM Logo Oficial" class="brand-logo-img" />
+        <div class="brand-text-block">
+          <div class="brand-title">A<span>T</span>OM</div>
+          <div class="brand-sub">RUNNING CLUB</div>
+        </div>
+      </a>
+
+      <nav class="desktop-nav">
+        <a href="#eventos" class="nav-link nav-link-highlight">Eventos & Carreras</a>
+        <a href="#evento-potrero" class="nav-link">Potrero Corre 2026</a>
+        <a href="#evento-ba21k" class="nav-link">21K Buenos Aires</a>
+        <a href="#el-club" class="nav-link">El Club</a>
+        <a href="#entrenamientos" class="nav-link">Entrenamientos</a>
+        <a href="#cesar-metodo" class="nav-link">César & Método</a>
+        <a href="#sedes" class="nav-link">Sedes</a>
+        <a href="#testimonios" class="nav-link">Testimonios</a>
+        <a href="#faq" class="nav-link">Preguntas</a>
+      </nav>
+
+      <div class="header-actions">
+        <a href="https://www.instagram.com/atomclubderunning/" target="_blank" rel="noopener" class="nav-link" style="display:flex;align-items:center;gap:8px;" title="Instagram Oficial">
+          <img src="assets/img/logos/instagram.svg" alt="Instagram Oficial" style="width:18px;height:18px;border-radius:4px;display:block;" />
+          <span>Instagram</span>
+        </a>
+        <a href="#contacto" class="btn btn-cyan btn-sm btn-header">
+          Sumate al Club
+        </a>
+        <button class="mobile-toggle" id="mobileToggle" aria-label="Abrir Menú">
+          <i data-lucide="menu"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer -->
+  <div class="mobile-drawer" id="mobileDrawer">
+    <a href="#eventos" class="mobile-nav-link" style="color:var(--cyan-primary);">Eventos & Competencias</a>
+    <a href="#evento-potrero" class="mobile-nav-link">Potrero Corre 2026 (San Luis)</a>
+    <a href="#evento-ba21k" class="mobile-nav-link">21K Buenos Aires 2026</a>
+    <a href="#el-club" class="mobile-nav-link">El Club</a>
+    <a href="#entrenamientos" class="mobile-nav-link">Entrenamientos</a>
+    <a href="#cesar-metodo" class="mobile-nav-link">César & Método</a>
+    <a href="#sedes" class="mobile-nav-link">Sedes & Horarios</a>
+    <a href="#testimonios" class="mobile-nav-link">Testimonios</a>
+    <a href="#faq" class="mobile-nav-link">Preguntas Frecuentes</a>
+    <a href="#contacto" class="mobile-nav-link">Contacto</a>
+
+    <div style="margin-top:24px;display:flex;flex-direction:column;gap:14px;">
+      <a href="#contacto" class="btn btn-cyan">
+        Sumate a ATOM
+      </a>
+      <a href="https://www.instagram.com/atomclubderunning/" target="_blank" rel="noopener" class="btn btn-outline-white btn-sm" style="justify-content:center;display:flex;align-items:center;gap:8px;">
+        <img src="assets/img/logos/instagram.svg" alt="Instagram" style="width:18px;height:18px;border-radius:4px;" />
+        Seguir en Instagram
+      </a>
+      <a href="admin.html" class="btn btn-outline-white btn-sm" style="justify-content:center;opacity:0.6;">
+        <i data-lucide="settings"></i> Panel CMS
+      </a>
+    </div>
+  </div>
+
+  <!-- ==========================================================================
+       1. HERO PRINCIPAL: GRAN IMPACTO & FOTOGRAFÍA PROTAGONISTA
+       ========================================================================== -->
+  <section class="hero-editorial" id="hero">
+    <div class="hero-media-wrapper">
+      <img src="assets/img/library/atom-entrenamiento-grupal-01.webp" alt="Corredores de ATOM Club de Running en Mendoza" />
+    </div>
+    <div class="hero-vignette"></div>
+
+    <div class="container">
+      <div class="hero-content-block">
+        <div class="hero-location-badge">
+          <i data-lucide="map-pin" style="width:16px;height:16px;"></i>
+          <span>La Dormida & La Paz · Mendoza, Argentina</span>
+        </div>
+
+        <h1 class="hero-title-main">
+          NO CORRÉS SOLO.<br />
+          <span class="accent-text">CORRÉS CON ATOM.</span>
+        </h1>
+
+        <p class="hero-subtitle-clean">
+          Una comunidad que comparte kilómetros, desafíos y experiencias.
+        </p>
+
+        <div class="hero-cta-group">
+          <a href="#eventos" class="btn btn-cyan">
+            <i data-lucide="flag" style="width:18px;height:18px;"></i> Ver Eventos & Carreras
+          </a>
+          <a href="#entrenamientos" class="btn btn-outline-white">
+            Conocé los Entrenamientos
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       2. NUEVA SECCIÓN DESTACADA: EVENTOS Y COMPETENCIAS
+       ========================================================================== -->
+  <section class="section-events" id="eventos">
+    <div class="container">
+      
+      <!-- HERO DE LA SECCIÓN EVENTOS -->
+      <div class="events-hero-header">
+        <img src="assets/img/eventos/potrero2026/atom-potrero-equipo-pista.webp" alt="Largada de ATOM RUNNING en el circuito internacional" class="events-hero-banner-img" />
+        <div class="events-hero-overlay">
+          <div class="eyebrow-tag">
+            <i data-lucide="award"></i> Competencias & Desafíos del Equipo
+          </div>
+          <h2 class="events-title">CORREMOS JUNTOS.<br />SUPERAMOS LÍMITES.</h2>
+          <p class="events-sub">
+            El atletismo se vive en cada entrenamiento semanal y se consagra cuando viajamos en equipo a desafiar los circuitos más emblemáticos del país.
+          </p>
+
+          <!-- Switcher Rápido de Grandes Competencias -->
+          <div class="event-nav-tabs" style="margin-top:24px;">
+            <a href="#evento-potrero" class="event-nav-tab active">
+              <i data-lucide="mountain"></i> Potrero Corre 2026 (San Luis)
+            </a>
+            <a href="#evento-ba21k" class="event-nav-tab">
+              <i data-lucide="building-2"></i> 21K Buenos Aires 2026
+            </a>
+            <a href="#mas-eventos" class="event-nav-tab">
+              <i data-lucide="calendar"></i> Más Competencias
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- ====================================================================
+           EVENTO 1: POTRERO CORRE 2026 · SAN LUIS (9ª EDICIÓN)
+           ==================================================================== -->
+      <div class="event-block-wrapper" id="evento-potrero">
+        
+        <div class="featured-event-card">
+          <div class="featured-event-grid">
+            
+            <div class="featured-event-media">
+              <video class="featured-card-video" autoplay muted loop playsinline poster="assets/img/eventos/potrero2026/atom-potrero-hero-poster.webp">
+                <source src="assets/video/potrero2026/atom-potrero-hero-loop.webm" type="video/webm" />
+                <source src="assets/video/potrero2026/atom-potrero-hero-loop.mp4" type="video/mp4" />
+                <img src="assets/img/eventos/potrero2026/atom-potrero-equipo-dique.webp" alt="Equipo ATOM RUNNING en el Dique Potrero de los Funes" />
+              </video>
+              <div class="featured-event-media-badge" style="border-color:rgba(255,179,0,0.4);background:rgba(0,15,26,0.9);">
+                <i data-lucide="trophy" style="width:16px;height:16px;color:#FFD54F;display:inline-block;vertical-align:middle;margin-right:6px;"></i>
+                Team Más Numeroso Fuera de la Provincia
+              </div>
+            </div>
+
+            <div class="featured-event-body">
+              <div class="event-meta-bar">
+                <span class="badge-featured" style="background:var(--cyan-primary);color:#001524;">9ª Edición</span>
+                <span class="badge-medal">Evento Realizado</span>
+                <span class="event-meta-pill">
+                  <i data-lucide="calendar"></i> 7 de noviembre de 2026
+                </span>
+                <span class="event-meta-pill">
+                  <i data-lucide="map-pin"></i> Circuito Internacional · Boxes
+                </span>
+              </div>
+
+              <h3 class="featured-event-title">POTRERO CORRE 2026</h3>
+              
+              <div style="display:flex;align-items:center;gap:8px;color:#94A3B8;font-size:0.95rem;margin-bottom:16px;">
+                <i data-lucide="map-pin" style="color:var(--coral-clay);width:16px;height:16px;"></i>
+                <span>Potrero de los Funes, San Luis · Boxes del Circuito Internacional & Perilago</span>
+              </div>
+
+              <!-- Cápsulas Gráficas de Distancias -->
+              <div class="distance-pill-group" style="margin-bottom:18px;">
+                <span class="distance-pill"><i data-lucide="zap"></i> 22K Competitiva</span>
+                <span class="distance-pill"><i data-lucide="zap"></i> 12K Desafío</span>
+                <span class="distance-pill"><i data-lucide="zap"></i> 6K Participativa</span>
+                <span class="distance-pill accent-coral"><i data-lucide="users"></i> +1.500 Atletas</span>
+              </div>
+
+              <!-- Cinta de Trofeo Oficial -->
+              <div class="trophy-callout-strip">
+                <i data-lucide="trophy" style="width:24px;height:24px;"></i>
+                <div>
+                  Trofeo Oficial Estatus Run: <strong>"Team Más Numeroso Fuera de la Provincia"</strong> (+25 corredores de ATOM Mendoza).
+                </div>
+              </div>
+
+              <p class="featured-event-story">
+                Más de 25 atletas de ATOM RUNNING de La Dormida y La Paz viajaron a San Luis para disputar la 9ª edición de Potrero Corre en las distancias de 22K, 12K y 6K. Sobre el asfalto del Circuito Internacional, rodeados de sierras y el lago, el club brilló con podios, medallas finisher y el trofeo consagratorio a la delegación foránea más masiva.
+              </p>
+
+              <div class="featured-event-quote">
+                "Potrero Corre fue una fiesta del atletismo esteño: salir de Mendoza con más de 25 personas y recibir el trofeo oficial al equipo más numeroso en el circuito internacional nos llena de orgullo."
+              </div>
+
+              <!-- Roster de Atletas Participantes con Dorsales Reales -->
+              <div style="font-family:var(--font-subheadline);font-size:0.8rem;font-weight:800;letter-spacing:0.12em;text-transform:uppercase;color:var(--cyan-primary);margin-bottom:10px;">
+                Corredores y Distinciones del Equipo en Potrero:
+              </div>
+              <div class="featured-athletes-strip">
+                <div class="athlete-strip-item">
+                  <img src="assets/img/eventos/potrero2026/atom-potrero-corredores-22k.webp" alt="Equipo 22K" class="athlete-strip-thumb" />
+                  <div class="athlete-strip-info">
+                    <strong>Equipo 22K</strong>
+                    <span>Dorsales 313 · 285 · 308 · 309 · 286</span>
+                  </div>
+                </div>
+                <div class="athlete-strip-item">
+                  <img src="assets/img/eventos/potrero2026/atom-potrero-equipo-pista.webp" alt="Equipo 12K y 6K" class="athlete-strip-thumb" />
+                  <div class="athlete-strip-info">
+                    <strong>Equipo 12K & 6K</strong>
+                    <span>Dorsales 1428 · 6385 · 6551 · 6426</span>
+                  </div>
+                </div>
+                <div class="athlete-strip-item">
+                  <img src="assets/img/eventos/potrero2026/atom-potrero-trofeo-team-numeroso.webp" alt="Trofeo Oficial" class="athlete-strip-thumb" />
+                  <div class="athlete-strip-info">
+                    <strong>Trofeo Oficial</strong>
+                    <span style="color:#FFD54F;">Team Más Numeroso Estatus Run</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="featured-event-actions">
+                <a href="#galeria-potrero" class="btn btn-cyan btn-sm">
+                  <i data-lucide="image"></i> Ver Galería Potrero (9 Fotos)
+                </a>
+                <a href="evento-potrero-corre-2026.html" class="btn btn-outline-white btn-sm">
+                  <i data-lucide="book-open"></i> Ver Crónica Completa del Viaje
+                </a>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- GALERÍA EXCLUSIVA POTRERO CORRE 2026 (9 FOTOS REALES) -->
+        <div class="event-gallery-section" id="galeria-potrero">
+          <div style="display:flex;align-items:flex-end;justify-content:space-between;flex-wrap:wrap;gap:20px;margin-bottom:28px;">
+            <div>
+              <span class="eyebrow-tag">Registro Fotográfico Oficial</span>
+              <h3 class="section-title-large" style="margin-bottom:8px;">GALERÍA: POTRERO CORRE 2026</h3>
+              <p class="section-desc-editorial" style="margin:0;">
+                9 fotografías reales que retratan la travesía: la salida en ruta, el dique de Potrero de los Funes, la largada en boxes, el trofeo oficial y los festejos del equipo.
+              </p>
+            </div>
+            <div style="font-family:var(--font-subheadline);font-size:0.85rem;color:var(--cyan-primary);font-weight:700;">
+              Hacé clic en cualquier foto para abrirla en pantalla completa
+            </div>
+          </div>
+
+          <!-- Filtros de Galería Potrero -->
+          <div class="gallery-filter-strip" id="potreroGalleryFilters">
+            <button class="gallery-filter-pill active" data-filter="todas">Todas las Fotos (9)</button>
+            <button class="gallery-filter-pill" data-filter="equipo">Equipo ATOM</button>
+            <button class="gallery-filter-pill" data-filter="carrera">Momentos de Carrera</button>
+            <button class="gallery-filter-pill" data-filter="medallas">Llegada & Premiación</button>
+          </div>
+
+          <!-- Grilla de Fotos Reales de Potrero -->
+          <div class="event-gallery-grid" id="potreroGalleryGrid">
+            <!-- Renderizado dinámicamente desde app.js -->
+          </div>
+        </div>
+
+      </div>
+
+      <!-- ====================================================================
+           EVENTO 2: MEDIA MARATÓN DE BUENOS AIRES 2026 (21K)
+           ==================================================================== -->
+      <div class="event-block-wrapper" id="evento-ba21k">
+        
+        <div class="featured-event-card" id="evento-destacado-ba">
+          <div class="featured-event-grid">
+            
+            <div class="featured-event-media">
+              <video class="featured-card-video" autoplay muted loop playsinline poster="assets/img/eventos/ba21k/atom-ba21k-hero-poster.webp">
+                <source src="assets/video/ba21k/atom-ba21k-hero-loop.webm" type="video/webm" />
+                <source src="assets/video/ba21k/atom-ba21k-hero-loop.mp4" type="video/mp4" />
+                <img src="assets/img/eventos/ba21k/atom-ba21k-equipo-medallas.webp" alt="Equipo ATOM RUNNING con medallas y bandera en Palermo" />
+              </video>
+              <div class="featured-event-media-badge">
+                <i data-lucide="check-circle-2" style="width:16px;height:16px;display:inline-block;vertical-align:middle;margin-right:6px;"></i>
+                Experiencia Destacada · Logro Oficial
+              </div>
+            </div>
+
+            <div class="featured-event-body">
+              <div class="event-meta-bar">
+                <span class="badge-featured">21 Kilómetros</span>
+                <span class="badge-medal">Media Maratón Oficial</span>
+                <span class="event-meta-pill">
+                  <i data-lucide="calendar"></i> 23 de agosto de 2026
+                </span>
+                <span class="event-meta-pill">
+                  <i data-lucide="clock"></i> 08:00 hs
+                </span>
+              </div>
+
+              <h3 class="featured-event-title">MEDIA MARATÓN DE BUENOS AIRES 2026</h3>
+              
+              <div style="display:flex;align-items:center;gap:8px;color:#94A3B8;font-size:0.95rem;margin-bottom:20px;">
+                <i data-lucide="map-pin" style="color:var(--coral-clay);width:16px;height:16px;"></i>
+                <span>Av. Figueroa Alcorta y Dorrego · Palermo, Ciudad Autónoma de Buenos Aires</span>
+              </div>
+
+              <p class="featured-event-story">
+                Una delegación de corredores de ATOM RUNNING de La Dormida y La Paz viajó a Buenos Aires para medirse en la media maratón más multitudinaria y veloz de Latinoamérica. Meses de fondos nocturnos y disciplina en el este mendocino se transformaron en abrazos, bandera en alto y medallas colgadas al cruzar la meta en Palermo.
+              </p>
+
+              <div class="featured-event-quote">
+                "Viajar desde Mendoza, correr entre 25.000 personas y ver a tus compañeros de La Dormida esperándote en la meta con la bandera es una sensación que no se olvida jamás."
+              </div>
+
+              <!-- Roster de Atletas Participantes con Dorsales Reales -->
+              <div style="font-family:var(--font-subheadline);font-size:0.8rem;font-weight:800;letter-spacing:0.12em;text-transform:uppercase;color:var(--cyan-primary);margin-bottom:10px;">
+                Corredores del Equipo en Carrera:
+              </div>
+              <div class="featured-athletes-strip">
+                <div class="athlete-strip-item">
+                  <img src="assets/img/eventos/ba21k/atom-ba21k-medalla-yair.webp" alt="Yair" class="athlete-strip-thumb" />
+                  <div class="athlete-strip-info">
+                    <strong>Yair</strong>
+                    <span>Dorsal 07850 · Finisher</span>
+                  </div>
+                </div>
+                <div class="athlete-strip-item">
+                  <img src="assets/img/eventos/ba21k/atom-ba21k-medalla-daniela.webp" alt="Daniela" class="athlete-strip-thumb" />
+                  <div class="athlete-strip-info">
+                    <strong>Daniela</strong>
+                    <span>Dorsal 21621 · Finisher</span>
+                  </div>
+                </div>
+                <div class="athlete-strip-item">
+                  <img src="assets/img/eventos/ba21k/atom-ba21k-medalla-eliana.webp" alt="Eliana" class="athlete-strip-thumb" />
+                  <div class="athlete-strip-info">
+                    <strong>Eliana</strong>
+                    <span>Dorsal 28774 · Finisher</span>
+                  </div>
+                </div>
+                <div class="athlete-strip-item">
+                  <img src="assets/img/eventos/ba21k/atom-ba21k-medalla-maira.webp" alt="Maira" class="athlete-strip-thumb" />
+                  <div class="athlete-strip-info">
+                    <strong>Maira</strong>
+                    <span>Dorsal 21243 · Finisher</span>
+                  </div>
+                </div>
+                <div class="athlete-strip-item">
+                  <img src="assets/img/eventos/ba21k/atom-ba21k-equipo-medallas.webp" alt="Sonia" class="athlete-strip-thumb" />
+                  <div class="athlete-strip-info">
+                    <strong>Sonia</strong>
+                    <span>Dorsal 28786 · Finisher</span>
+                  </div>
+                </div>
+                <div class="athlete-strip-item">
+                  <img src="assets/img/eventos/ba21k/atom-ba21k-previa-palermo.webp" alt="César Vergel" class="athlete-strip-thumb" />
+                  <div class="athlete-strip-info">
+                    <strong>César Vergel</strong>
+                    <span>Profesor & DT</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="featured-event-actions">
+                <a href="#galeria-ba21k" class="btn btn-cyan btn-sm">
+                  <i data-lucide="image"></i> Ver Galería 21K (13 Fotos)
+                </a>
+                <a href="evento-21k-buenos-aires.html" class="btn btn-outline-white btn-sm">
+                  <i data-lucide="book-open"></i> Ver Crónica Completa del Viaje
+                </a>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- GALERÍA FOTOGRÁFICA 21K BUENOS AIRES (13 FOTOGRAFÍAS REALES) -->
+        <div class="event-gallery-section" id="galeria-ba21k">
+          <div style="display:flex;align-items:flex-end;justify-content:space-between;flex-wrap:wrap;gap:20px;margin-bottom:28px;">
+            <div>
+              <span class="eyebrow-tag">Registro Fotográfico Exclusivo</span>
+              <h3 class="section-title-large" style="margin-bottom:8px;">GALERÍA: 21K BUENOS AIRES</h3>
+              <p class="section-desc-editorial" style="margin:0;">
+                13 fotografías reales que retratan la travesía completa de ATOM: el viaje en avión, la noche en el Obelisco, el retiro de kits, la largada en Palermo y las medallas en la meta.
+              </p>
+            </div>
+            <div style="font-family:var(--font-subheadline);font-size:0.85rem;color:var(--cyan-primary);font-weight:700;">
+              Hacé clic en cualquier foto para abrirla en pantalla completa
+            </div>
+          </div>
+
+          <!-- Filtros de Galería BA -->
+          <div class="gallery-filter-strip" id="baGalleryFilters">
+            <button class="gallery-filter-pill active" data-filter="todas">Todas las Fotos (13)</button>
+            <button class="gallery-filter-pill" data-filter="equipo">Equipo ATOM</button>
+            <button class="gallery-filter-pill" data-filter="medallas">Llegada & Medallas</button>
+            <button class="gallery-filter-pill" data-filter="carrera">Momentos de Carrera</button>
+          </div>
+
+          <!-- Grilla de Fotos Reales de BA -->
+          <div class="event-gallery-grid" id="baGalleryGrid">
+            <!-- Renderizado dinámicamente desde app.js -->
+          </div>
+        </div>
+
+      </div>
+
+      <!-- OTROS EVENTOS: PRÓXIMOS & REALIZADOS (HISTORIAL REUTILIZABLE) -->
+      <div class="other-events-section" id="mas-eventos">
+        <div class="section-head-clean">
+          <span class="eyebrow-tag">Calendario & Trayectoria</span>
+          <h3 class="section-title-large">MÁS COMPETENCIAS DEL CLUB</h3>
+          <p class="section-desc-editorial">
+            Estructura continua de participación en pruebas de calle, fondo y trail running en Mendoza y todo el país.
+          </p>
+        </div>
+
+        <div class="other-events-grid" id="otherEventsGrid">
+          <!-- Renderizado dinámicamente desde data.js -->
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       3. SEGUINOS EN INSTAGRAM (@atomclubderunning)
+       ========================================================================== -->
+  <section class="section-instagram-banner" id="instagram-block">
+    <div class="container">
+      <div class="instagram-header-row">
+        <div>
+          <span class="eyebrow-tag" style="color:#FFFFFF;background:rgba(225,48,108,0.15);border-color:rgba(225,48,108,0.3);display:inline-flex;align-items:center;gap:6px;">
+            <img src="assets/img/logos/instagram.svg" alt="Instagram" style="width:16px;height:16px;border-radius:3px;" />
+            Comunidad en Tiempo Real
+          </span>
+          <h2 class="section-title-large" style="margin-bottom:8px;">SEGUINOS EN INSTAGRAM</h2>
+          <p class="section-desc-editorial" style="margin:0;">
+            Fotos diarias de los entrenamientos en La Dormida y La Paz, salidas de fin de semana, videos técnicos del Profe César y el detrás de escena de cada carrera.
+          </p>
+        </div>
+        <div>
+          <a href="https://www.instagram.com/atomclubderunning/" target="_blank" rel="noopener" class="btn btn-outline-white" style="display:inline-flex;align-items:center;gap:10px;">
+            <img src="assets/img/logos/instagram.svg" alt="Instagram" style="width:20px;height:20px;border-radius:5px;" />
+            Ver @atomclubderunning
+          </a>
+        </div>
+      </div>
+
+      <div class="instagram-feed-grid" id="instagramFeedGrid">
+        <!-- Renderizado dinámico de fotos reales de Instagram -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       4. EL CLUB / FILOSOFÍA (CONTRASTE EDITORIAL CLARO)
+       ========================================================================== -->
+  <section class="section-paper" id="el-club">
+    <div class="container">
+      <div class="split-editorial">
+        <div class="editorial-story">
+          <span class="eyebrow-tag dark-tag">Nuestra Identidad</span>
+          <h2 class="section-title-large">MUCHO MÁS QUE CORRER</h2>
+
+          <p class="editorial-lead">
+            ATOM Club de Running nació en el este de Mendoza para promover la salud, el atletismo y el compañerismo a través del movimiento diario.
+          </p>
+
+          <p>
+            No somos una franquicia de gimnasio ni un grupo de rutinas genéricas. Somos una comunidad de corredores reales donde el que recién empieza encuentra aliento sincero y quien busca competir halla la exigencia y el método profesional para lograrlo.
+          </p>
+
+          <div class="editorial-quote-inline">
+            "El verdadero valor de correr no está en ganarle al reloj, sino en descubrir que tus límites estaban mucho más lejos de lo que creías cuando corrés en equipo."
+          </div>
+
+          <p>
+            Con entrenamientos activos en <strong>La Dormida (Santa Rosa)</strong> y en <strong>La Paz</strong>, integramos a vecinos de todas las edades en una experiencia deportiva saludable, segura y motivadora.
+          </p>
+
+          <div class="pillars-clean-grid">
+            <div class="pillar-clean-card">
+              <h4>Salud & Progresión</h4>
+              <p>Entrenar respetando tus articulaciones y tu evolución natural, sin forzar dolores innecesarios.</p>
+            </div>
+            <div class="pillar-clean-card">
+              <h4>Compañerismo Real</h4>
+              <p>El que va más rápido espera y acompaña; el que recién arranca encuentra una mano extendida.</p>
+            </div>
+            <div class="pillar-clean-card">
+              <h4>Terreno & Aventura</h4>
+              <p>Amamos el asfalto y los senderos esteños: dunas, tierra y circuitos naturales mendocinos.</p>
+            </div>
+            <div class="pillar-clean-card">
+              <h4>Planificación Guiada</h4>
+              <p>Entrenamientos dosificados y supervisados por el Profesor de Educación Física César Vergel.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="editorial-image-frame">
+          <img src="assets/img/library/atom-comunidad-01.webp" alt="Comunidad ATOM corriendo en equipo" />
+          <div class="editorial-image-caption">
+            Comunidad ATOM · Compañerismo y constancia en cada salida
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       5. MODALIDADES DE ENTRENAMIENTO
+       ========================================================================== -->
+  <section class="section-dark" id="entrenamientos">
+    <div class="container">
+      <div class="section-head-clean">
+        <span class="eyebrow-tag">Propuesta Deportiva</span>
+        <h2 class="section-title-large">MODALIDADES DE ENTRENAMIENTO</h2>
+        <p class="section-desc-editorial">
+          Grupos organizados por nivel y objetivos específicos. Desde dar tus primeros pasos caminando y trotando hasta preparar 21 kilómetros de trail.
+        </p>
+      </div>
+
+      <div class="trainings-catalog-grid" id="trainingsCatalogGrid">
+        <!-- Renderizado dinámicamente desde data.js con fotos reales -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       6. SECCIÓN ESPECIAL: CÉSAR Y LOS ENTRENAMIENTOS
+       ========================================================================== -->
+  <section class="section-coach-feature" id="cesar-metodo">
+    <div class="container">
+      <div class="coach-feature-split">
+        <div class="coach-feature-portrait">
+          <img src="assets/img/library/atom-entrenador-cesar-01.webp" alt="Profesor César Vergel dirigiendo un entrenamiento" />
+          <div class="coach-feature-portrait-label">
+            Prof. César Vergel · Director Técnico de ATOM Club de Running
+          </div>
+        </div>
+
+        <div class="coach-feature-content">
+          <span class="eyebrow-tag">Dirección Técnica</span>
+          <h2>CÉSAR Y LOS ENTRENAMIENTOS</h2>
+          <div class="coach-feature-title">Cómo se entrena en ATOM</div>
+
+          <p class="coach-feature-bio">
+            Como profesor de educación física, César Vergel planifica cada sesión con un objetivo claro: que cada corredor progrese a su ritmo, disfrute del proceso y mantenga su salud protegida. En ATOM no se improvisa: se calienta, se trabaja la técnica, se corre con ritmo dosificado y se elonga.
+          </p>
+
+          <div class="coach-methodology-grid">
+            <div class="methodology-item">
+              <h4>Adaptación Progresiva</h4>
+              <p>Si nunca corriste, alternamos caminata y trote suave (método CACO). Tu corazón y tus músculos se adaptan sin lesiones.</p>
+            </div>
+            <div class="methodology-item">
+              <h4>Técnica & Biomecánica</h4>
+              <p>Aprender a pisar sin talonear en exceso, regular la cadencia y respirar con soltura para no gastar energía de más.</p>
+            </div>
+            <div class="methodology-item">
+              <h4>Fuerza Funcional & Core</h4>
+              <p>Ejercicios de glúteos, cuádriceps, gemelos y abdomen para proteger rodillas y sostener la postura en fatiga.</p>
+            </div>
+            <div class="methodology-item">
+              <h4>Acompañamiento en Grupo</h4>
+              <p>César monitorea los tiempos de cada grupo, adaptando las pasadas para que nadie quede rezagado ni sobreexigido.</p>
+            </div>
+          </div>
+
+          <div style="display:flex;flex-wrap:wrap;gap:16px;align-items:center;">
+            <a href="https://www.instagram.com/cesarvergel1986/" target="_blank" rel="noopener" class="btn btn-outline-white btn-sm" style="display:inline-flex;align-items:center;gap:8px;">
+              <img src="assets/img/logos/instagram.svg" alt="Instagram" style="width:18px;height:18px;border-radius:4px;" />
+              @cesarvergel1986
+            </a>
+            <button onclick="openCoachWhatsAppDirect()" class="btn btn-cyan btn-sm" style="display:inline-flex;align-items:center;gap:8px;">
+              <img src="assets/img/logos/whatsapp.svg" alt="WhatsApp" style="width:18px;height:18px;border-radius:4px;" />
+              Consultar con César por WhatsApp
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       7. SEDES Y CIRCUITOS: LA DORMIDA & LA PAZ
+       ========================================================================== -->
+  <section class="section-dark" id="sedes" style="background:#001220;">
+    <div class="container">
+      <div class="section-head-clean">
+        <span class="eyebrow-tag">Dónde Entrenamos</span>
+        <h2 class="section-title-large">DOS SEDES EN EL ESTE MENDOCINO</h2>
+        <p class="section-desc-editorial">
+          Entrenamientos semanales en circuitos urbanos, pistas pedestres y senderos en La Dormida (Santa Rosa) y La Paz.
+        </p>
+      </div>
+
+      <div class="locations-editorial-grid" id="locationsEditorialGrid">
+        <!-- Renderizado dinámicamente desde data.js -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       8. TESTIMONIOS REALES DE LA COMUNIDAD
+       ========================================================================== -->
+  <section class="section-dark" id="testimonios">
+    <div class="container">
+      <div class="section-head-clean">
+        <span class="eyebrow-tag">Experiencias Reales</span>
+        <h2 class="section-title-large">CORREDORES DE ATOM</h2>
+        <p class="section-desc-editorial">
+          Historias de superación, salud y compañerismo contadas por quienes entrenan semana a semana en el club.
+        </p>
+      </div>
+
+      <div class="testimonials-editorial-grid" id="testimonialsEditorialGrid">
+        <!-- Renderizado dinámicamente desde data.js con fotos de atletas -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       9. PREGUNTAS FRECUENTES (FAQ ACORDEÓN LIMPIO)
+       ========================================================================== -->
+  <section class="section-dark" id="faq" style="background:#001220;">
+    <div class="container">
+      <div class="section-head-clean" style="text-align:center;max-width:760px;margin-left:auto;margin-right:auto;">
+        <span class="eyebrow-tag">Respuestas Claras</span>
+        <h2 class="section-title-large">PREGUNTAS FRECUENTES</h2>
+        <p class="section-desc-editorial" style="margin:0 auto;">
+          Todo lo que necesitás saber antes de dar tu primer paso con ATOM Club de Running.
+        </p>
+      </div>
+
+      <div class="faq-clean-list" id="faqCleanList">
+        <!-- Renderizado dinámicamente desde data.js -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       10. CONTACTO & SUMATE (DIRECTO, SIN CLUTTER)
+       ========================================================================== -->
+  <section class="contact-editorial-block" id="contacto">
+    <div class="container">
+      <div class="contact-split">
+        <div class="contact-lead-info">
+          <span class="eyebrow-tag dark-tag">Primer Paso</span>
+          <h2 class="section-title-large">SUMATE A ATOM</h2>
+          <p>
+            Vení a probar tu primera clase de bienvenida sin compromiso. Escribinos directamente por WhatsApp para coordinar el horario y punto de encuentro según tu sede más cercana.
+          </p>
+
+          <div class="contact-direct-items">
+            <a href="https://wa.me/5492610000000?text=Hola,%20quiero%20conocer%20ATOM%20Club%20de%20Running%20y%20saber%20c%C3%B3mo%20puedo%20sumarme." target="_blank" rel="noopener" class="contact-channel-row">
+              <div class="channel-row-icon wa">
+                <img src="assets/img/logos/whatsapp.svg" alt="WhatsApp Oficial" width="52" height="52" />
+              </div>
+              <div class="channel-row-text">
+                <h4>WhatsApp Oficial</h4>
+                <p>Respuesta directa para sumarte a La Dormida o La Paz</p>
+              </div>
+            </a>
+
+            <a href="https://www.instagram.com/atomclubderunning/" target="_blank" rel="noopener" class="contact-channel-row">
+              <div class="channel-row-icon ig">
+                <img src="assets/img/logos/instagram.svg" alt="Instagram Oficial" width="52" height="52" />
+              </div>
+              <div class="channel-row-text">
+                <h4>Instagram Oficial</h4>
+                <p>@atomclubderunning · Fotos, entrenamientos e historias diarias</p>
+              </div>
+            </a>
+          </div>
+
+          <div style="background:#EDF2F7;padding:24px;border-radius:6px;border-left:3px solid var(--text-dark);">
+            <div style="font-weight:800;font-size:1rem;color:var(--text-dark);margin-bottom:4px;">
+              📍 Sedes activas en Mendoza
+            </div>
+            <div style="font-size:0.95rem;color:#475569;">
+              La Dormida (Santa Rosa) y La Paz. Grupos adaptados por nivel.
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-clean-form">
+          <h3>Mensaje Rápido a WhatsApp</h3>
+          <p>Completá estos datos y se abrirá WhatsApp con tu mensaje listo para el Prof. César.</p>
+
+          <form id="cleanInquiryForm">
+            <div class="form-group-clean">
+              <label class="form-label-clean" for="inqName">Nombre y Apellido *</label>
+              <input type="text" id="inqName" class="form-control-clean" placeholder="Ej. Martín González" required />
+            </div>
+
+            <div class="form-group-clean">
+              <label class="form-label-clean" for="inqSede">Sede de Preferencia *</label>
+              <select id="inqSede" class="form-control-clean" style="height:52px;">
+                <option value="La Dormida (Santa Rosa)">Sede La Dormida (Santa Rosa, Mendoza)</option>
+                <option value="La Paz (Mendoza)">Sede La Paz (Mendoza)</option>
+                <option value="A coordinar según días">A coordinar / Consultar días</option>
+              </select>
+            </div>
+
+            <div class="form-group-clean">
+              <label class="form-label-clean" for="inqLevel">Tu Experiencia Actual</label>
+              <select id="inqLevel" class="form-control-clean" style="height:52px;">
+                <option value="Inicial (arranco de cero / caminata y trote)">Inicial (arranco de cero o hace mucho no entreno)</option>
+                <option value="Intermedio (ya corro 5K a 10K)">Intermedio (ya corro entre 5K y 10K)</option>
+                <option value="Avanzado / Trail (busco carreras y desnivel)">Avanzado / Trail (preparo carreras y fondo)</option>
+              </select>
+            </div>
+
+            <div class="form-group-clean">
+              <label class="form-label-clean" for="inqNotes">Comentarios u Objetivos (Opcional)</label>
+              <textarea id="inqNotes" class="form-control-clean" rows="3" placeholder="Ej. Quiero empezar por salud, bajar de peso, preparar una carrera..."></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-dark" style="width:100%;">
+              <i data-lucide="send"></i> Enviar Consulta a WhatsApp
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       LIGHTBOX MODAL DE EVENTOS Y GALERÍA (CON NAVEGACIÓN FLECHAS Y TECLADO)
+       ========================================================================== -->
+  <div class="lightbox-modal" id="lightboxModal">
+    <div class="lightbox-dialog">
+      <button class="lightbox-close" id="lightboxClose" aria-label="Cerrar imagen (ESC)">
+        <i data-lucide="x"></i>
+      </button>
+
+      <div class="lightbox-img-box">
+        <button class="lightbox-nav-btn prev" id="lightboxPrev" aria-label="Foto anterior (Flecha Izquierda)">
+          <i data-lucide="chevron-left"></i>
+        </button>
+        
+        <img id="lightboxImg" src="" alt="ATOM Evento Galería" />
+
+        <button class="lightbox-nav-btn next" id="lightboxNext" aria-label="Foto siguiente (Flecha Derecha)">
+          <i data-lucide="chevron-right"></i>
+        </button>
+      </div>
+
+      <div class="lightbox-meta">
+        <div class="lightbox-meta-text">
+          <h3 id="lightboxTitle"></h3>
+          <p id="lightboxCaption"></p>
+        </div>
+        <div class="lightbox-counter" id="lightboxCounter">
+          1 / 13
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==========================================================================
+       BOTÓN FLOTANTE DISCRETO (DOCK WHATSAPP)
+       ========================================================================== -->
+  <a href="https://wa.me/5492610000000?text=Hola,%20quiero%20conocer%20ATOM%20Club%20de%20Running%20y%20saber%20c%C3%B3mo%20puedo%20sumarme."
+     target="_blank"
+     rel="noopener"
+     class="discrete-whatsapp-dock"
+     id="floatingWaDock"
+     title="Escribinos a WhatsApp">
+    <img src="assets/img/logos/whatsapp.svg" alt="WhatsApp" width="22" height="22" />
+    <span>Sumate a ATOM</span>
+  </a>
+
+  <!-- ==========================================================================
+       FOOTER EDITORIAL
+       ========================================================================== -->
+  <footer class="site-footer-editorial">
+    <div class="container">
+      <div class="footer-editorial-grid">
+        <div class="footer-editorial-col">
+          <div style="display:flex;align-items:center;gap:14px;margin-bottom:18px;">
+            <img src="assets/img/logos/atom-emblem.svg" alt="ATOM" style="height:48px;width:48px;border-radius:12px;" />
+            <div style="font-family:var(--font-headline);font-size:1.8rem;letter-spacing:0.04em;color:#FFFFFF;">
+              ATOM <span style="color:var(--cyan-primary)">RUNNING</span>
+            </div>
+          </div>
+          <p style="font-size:1rem;color:#94A3B8;line-height:1.6;margin-bottom:20px;">
+            Comunidad deportiva y equipo de entrenamiento de running y trail en La Dormida (Santa Rosa) y La Paz, Mendoza. Entrená con método, compartí kilómetros con amigos y superá tus propios límites.
+          </p>
+          <a href="https://www.instagram.com/atomclubderunning/" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:8px;color:#FFFFFF;font-weight:700;font-size:0.925rem;">
+            <img src="assets/img/logos/instagram.svg" alt="Instagram" style="width:18px;height:18px;border-radius:4px;" />
+            @atomclubderunning
+          </a>
+        </div>
+
+        <div class="footer-editorial-col">
+          <h4>Grandes Carreras</h4>
+          <ul class="footer-links-list">
+            <li><a href="#evento-potrero">Potrero Corre 2026 (San Luis)</a></li>
+            <li><a href="evento-potrero-corre-2026.html">Crónica Potrero Corre</a></li>
+            <li><a href="#evento-ba21k">Media Maratón Buenos Aires 2026</a></li>
+            <li><a href="evento-21k-buenos-aires.html">Crónica 21K Buenos Aires</a></li>
+            <li><a href="#el-club">El Club & Valores</a></li>
+            <li><a href="#entrenamientos">Modalidades de Entrenamiento</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-editorial-col">
+          <h4>Comunidad</h4>
+          <ul class="footer-links-list">
+            <li><a href="#instagram-block">Feed de Instagram</a></li>
+            <li><a href="#testimonios">Testimonios de Atletas</a></li>
+            <li><a href="#faq">Preguntas Frecuentes</a></li>
+            <li><a href="#contacto">Sumate por WhatsApp</a></li>
+            <li><a href="admin.html">Panel Administrador (CMS)</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-editorial-col">
+          <h4>Sedes Mendoza</h4>
+          <p style="font-size:0.9rem;color:#CBD5E1;margin-bottom:12px;">
+            <strong>La Dormida (Santa Rosa):</strong><br />
+            Lunes, Miércoles y Viernes 19:30 hs.
+          </p>
+          <p style="font-size:0.9rem;color:#CBD5E1;margin-bottom:12px;">
+            <strong>La Paz:</strong><br />
+            Martes y Jueves 19:30 hs.
+          </p>
+          <p style="font-size:0.9rem;color:#94A3B8;">
+            Prof. César Vergel (<a href="https://www.instagram.com/cesarvergel1986/" target="_blank" rel="noopener" style="color:var(--cyan-primary);">@cesarvergel1986</a>)
+          </p>
+        </div>
+      </div>
+
+      <div class="footer-editorial-bottom">
+        <div>
+          &copy; 2026 ATOM RUNNING · La Dormida & La Paz, Mendoza, Argentina.
+        </div>
+        <div>
+          Diseño deportivo editorial para la comunidad de atletismo mendocina.
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="assets/js/data.js"></script>
+  <script src="assets/js/app.js"></script>
+</body>
+</html>

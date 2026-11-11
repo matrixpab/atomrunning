@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Potrero Corre 2026 (9ª Edición) · ATOM RUNNING</title>
+  <meta name="description" content="Crónica oficial, galería fotográfica y reconocimiento de ATOM RUNNING en Potrero Corre 2026 (San Luis) · Trofeo al Team Más Numeroso Fuera de la Provincia." />
+  
+  <!-- Tipografías Oficiales -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,600;0,700;0,800;0,900;1,700&family=Inter:wght@300;400;500;600;700&family=Syne:wght@700;800&display=swap" rel="stylesheet" />
+
+  <!-- Estilos Globales -->
+  <link rel="stylesheet" href="assets/css/style.css" />
+
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body class="atom-body">
+
+  <!-- ==========================================================================
+       HEADER EDITORIAL ATOM RUNNING
+       ========================================================================== -->
+  <header class="site-header">
+    <div class="header-inner container-wide">
+      <a href="index.html" class="brand-clean">
+        <img src="assets/img/logos/atom-emblem.svg" alt="ATOM Club de Running" class="brand-logo" style="width:44px;height:44px;border-radius:10px;" />
+        <div class="brand-text">
+          <span class="brand-name">ATOM <span class="highlight">RUNNING</span></span>
+          <span class="brand-sub">Comunidad Deportiva · Mendoza</span>
+        </div>
+      </a>
+
+      <nav class="nav-clean desktop-nav">
+        <a href="index.html#inicio">Inicio</a>
+        <a href="index.html#eventos" class="active">Eventos & Carreras</a>
+        <a href="#cronica">La Travesía San Luis</a>
+        <a href="#trofeo">Trofeo Oficial</a>
+        <a href="#atletas">Equipo & Dorsales</a>
+        <a href="#galeria">Galería (9 Fotos)</a>
+        <a href="index.html#contacto">Sumate</a>
+      </nav>
+
+      <div class="header-actions">
+        <a href="index.html#eventos" class="btn btn-outline-white btn-sm">
+          <i data-lucide="arrow-left"></i> Volver a Eventos
+        </a>
+        <button class="mobile-toggle" id="mobileToggle" aria-label="Abrir menú">
+          <i data-lucide="menu"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer -->
+  <div class="mobile-drawer" id="mobileDrawer">
+    <nav class="mobile-nav-links">
+      <a href="index.html">Inicio</a>
+      <a href="index.html#eventos">Volver a Todos los Eventos</a>
+      <a href="#cronica">Crónica del Viaje</a>
+      <a href="#trofeo">Trofeo Team Más Numeroso</a>
+      <a href="#atletas">Equipo & Dorsales</a>
+      <a href="#galeria">Galería Completa (9 Fotos)</a>
+      <a href="index.html#contacto">Sumate al Equipo</a>
+    </nav>
+  </div>
+
+  <main>
+    <!-- ==========================================================================
+         HERO CINEMATOGRÁFICO CON VIDEO DE FONDO: POTRERO CORRE 2026
+         ========================================================================== -->
+    <section class="event-video-hero" id="hero-video">
+      <!-- Video Background Container -->
+      <div class="event-video-bg-container">
+        <video class="event-video-element" autoplay muted loop playsinline poster="assets/img/eventos/potrero2026/atom-potrero-hero-poster.webp">
+          <source src="assets/video/potrero2026/atom-potrero-hero-loop.webm" type="video/webm" />
+          <source src="assets/video/potrero2026/atom-potrero-hero-loop.mp4" type="video/mp4" />
+        </video>
+        <img src="assets/img/eventos/potrero2026/atom-potrero-hero-poster.webp" alt="Potrero Corre 2026" class="event-video-poster" />
+        <div class="event-video-overlay"></div>
+        <div class="event-video-vignette"></div>
+      </div>
+
+      <div class="container event-video-content hero-animate-in">
+        
+        <div class="chronicle-breadcrumb" style="margin-bottom:18px;">
+          <a href="index.html">Inicio</a>
+          <i data-lucide="chevron-right" style="width:14px;height:14px;"></i>
+          <a href="index.html#eventos">Eventos & Competencias</a>
+          <i data-lucide="chevron-right" style="width:14px;height:14px;"></i>
+          <span>Potrero Corre 2026</span>
+        </div>
+
+        <!-- Marca e Identidad ATOM RUNNING -->
+        <div class="hero-tag-brand">
+          <img src="assets/img/logos/atom-emblem.svg" alt="ATOM" style="width:24px;height:24px;border-radius:6px;" />
+          <span>ATOM RUNNING</span>
+        </div>
+
+        <h1 class="hero-title-cinematic">
+          POTRERO CORRE 2026
+        </h1>
+
+        <div class="hero-dist-banner">
+          SAN LUIS · ARGENTINA
+        </div>
+
+        <div class="hero-tagline-cinematic">
+          DESAFIANDO CADA KILÓMETRO.
+        </div>
+
+        <div style="display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin-bottom:18px;">
+          <span class="eyebrow-tag" style="background:rgba(0,229,255,0.12);color:var(--cyan-primary);border-color:rgba(0,229,255,0.3);margin:0;">
+            <i data-lucide="award"></i> 9ª Edición · Evento Realizado
+          </span>
+          <span class="eyebrow-tag" style="background:rgba(255,179,0,0.15);color:#FFD54F;border-color:rgba(255,179,0,0.4);margin:0;">
+            <i data-lucide="trophy"></i> Team Más Numeroso Fuera de la Provincia
+          </span>
+        </div>
+
+        <p class="event-hero-subtitle" style="max-width:880px;font-size:1.15rem;line-height:1.6;color:#E2E8F0;margin-bottom:20px;">
+          El Circuito Internacional y el Dique de Potrero de los Funes como escenario. Más de 25 atletas de ATOM RUNNING viajaron desde Mendoza para competir en 22K, 12K y 6K, consagrándose con el trofeo oficial al equipo foráneo más numeroso.
+        </p>
+
+        <!-- Distancias Destacadas en Cápsulas Gráficas -->
+        <div class="distance-pill-group" style="margin-bottom:24px;">
+          <span class="distance-pill"><i data-lucide="zap"></i> 22K Competitiva</span>
+          <span class="distance-pill"><i data-lucide="zap"></i> 12K Desafío</span>
+          <span class="distance-pill"><i data-lucide="zap"></i> 6K Participativa</span>
+          <span class="distance-pill accent-coral"><i data-lucide="flag"></i> Circuito Internacional de Boxes</span>
+        </div>
+
+        <!-- Barra de Metadatos del Evento Realizado -->
+        <div class="chronicle-meta-bar" style="margin-top:0;">
+          <div class="chronicle-meta-cell">
+            <span>Fecha del Evento</span>
+            <strong>Sábado 7 de Noviembre de 2026</strong>
+          </div>
+          <div class="chronicle-meta-cell">
+            <span>Ubicación</span>
+            <strong>Potrero de los Funes, San Luis, Argentina</strong>
+          </div>
+          <div class="chronicle-meta-cell">
+            <span>Lugar de Largada</span>
+            <strong>Boxes del Circuito Internacional</strong>
+          </div>
+          <div class="chronicle-meta-cell">
+            <span>Organización Oficial</span>
+            <strong>Estatus Run (9ª Edición)</strong>
+          </div>
+          <div class="chronicle-meta-cell">
+            <span>Convocatoria Total</span>
+            <strong>Más de 1.500 Atletas</strong>
+          </div>
+        </div>
+
+        <div style="display:flex;flex-wrap:wrap;gap:16px;margin-top:28px;">
+          <a href="#galeria" class="btn btn-cyan">
+            <i data-lucide="image"></i> Ver Galería de la Carrera (9 Fotos)
+          </a>
+          <a href="index.html#eventos" class="btn btn-outline-white">
+            <i data-lucide="arrow-left"></i> Volver a Eventos
+          </a>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         CRÓNICA EDITORIAL DEL EQUIPO EN POTRERO DE LOS FUNES
+         ========================================================================== -->
+    <section class="chronicle-content-section" id="cronica">
+      <div class="container">
+        <div class="chronicle-grid">
+          
+          <!-- Columna Principal: El Relato -->
+          <article class="chronicle-article-body">
+            <span class="eyebrow-tag">Crónica Oficial del Viaje</span>
+            <h2 class="section-title-large" style="margin-bottom:24px;">POTRERO DE LOS FUNES: CORRER ENTRE SIERRAS, LAGO Y ASFALTO</h2>
+            
+            <p class="chronicle-lead-para">
+              La 9ª edición de <strong>Potrero Corre 2026</strong> representó una cita histórica para el atletismo regional al convocar a más de 1.500 corredores en el majestuoso trazado del Circuito Internacional que bordea el Dique de Potrero de los Funes. Para ATOM RUNNING, la competencia significó una de las movilizaciones grupales más grandes en la historia del club: más de 25 atletas de Santa Rosa y La Paz coparon las calles sanluiseñas.
+            </p>
+
+            <!-- Cinta Destacada de Trofeo -->
+            <div class="trophy-callout-strip" id="trofeo">
+              <i data-lucide="trophy" style="width:28px;height:28px;"></i>
+              <div>
+                <strong>Reconocimiento Oficial Estatus Run:</strong>
+                <span style="display:block;font-size:0.85rem;color:#FFF;font-weight:400;text-transform:none;margin-top:2px;">
+                  ATOM RUNNING fue distinguido con el trofeo exclusivo al <strong>"Team Más Numeroso Fuera de la Provincia"</strong> por liderar la mayor delegación foránea presente en Potrero Corre 2026.
+                </span>
+              </div>
+            </div>
+
+            <!-- Hito 1: La Partida -->
+            <div class="chronicle-step-card">
+              <div class="chronicle-step-num">01</div>
+              <h3 class="chronicle-step-title">La Partida en Caravana desde Mendoza</h3>
+              <p>
+                El viaje comenzó bien temprano en el este mendocino. Corredores de La Dormida y La Paz se congregaron para iniciar la travesía por la Ruta Nacional 7. Con una parada clásica en el acceso esteño para la foto grupal con mates en mano, el clima de camaradería anticipó un fin de semana único de deporte, integración y disfrute en equipo.
+              </p>
+            </div>
+
+            <!-- Hito 2: La Previa y el Monumento al Cóndor -->
+            <div class="chronicle-step-card">
+              <div class="chronicle-step-num">02</div>
+              <h3 class="chronicle-step-title">La Previa: Cinemacenter, Dique y Monumento al Cóndor</h3>
+              <p>
+                Al arribar a San Luis, la delegación retiró los dorsales oficiales de 22K, 12K y 6K en la Expo de Cinemacenter. La previa continuó recorriendo el perilago del Dique Potrero de los Funes, donde el equipo posó frente a los cerros con la bandera oficial, y concluyó al atardecer visitando el imponente Monumento al Cóndor iluminado.
+              </p>
+            </div>
+
+            <div class="chronicle-pullquote">
+              "No solo viajamos a competir; viajamos a demostrar que en el este de Mendoza hay una comunidad que ama correr, que se acompaña en cada curva y que celebra unida cada logro."
+            </div>
+
+            <!-- Hito 3: La Carrera en los Boxes -->
+            <div class="chronicle-step-card">
+              <div class="chronicle-step-num">03</div>
+              <h3 class="chronicle-step-title">La Largada en Boxes: Adrenalina en el Circuito Internacional</h3>
+              <p>
+                El sábado 7 de noviembre, el sector de boxes del Circuito Internacional vibró con la música, el aliento del público y el entusiasmo de más de 1.500 atletas. Con el cerro de fondo y el asfalto listo, los corredores de ATOM partieron en sus respectivas pruebas: los 22K de fondo (afrontando las ondulaciones exigentes del circuito), los intensos 12K y los 6K de velocidad. Cada corredor administró su ritmo con la preparación táctica brindada por el Prof. César Vergel.
+              </p>
+            </div>
+
+            <!-- Hito 4: Las Medallas y el Trofeo -->
+            <div class="chronicle-step-card">
+              <div class="chronicle-step-num">04</div>
+              <h3 class="chronicle-step-title">Meta Cumplida, Medallas al Pecho y el Gran Trofeo</h3>
+              <p>
+                El cruce del arco de meta fue una fiesta. Cada atleta recibió su medalla finisher y se fundió en abrazos con los compañeros que esperaban en la recta principal. El broche de oro llegó en el podio general, cuando los organizadores de Estatus Run hicieron subir a ATOM RUNNING para entregar el trofeo consagratorio como el <strong>"Team Más Numeroso Fuera de la Provincia"</strong>, coronando un viaje memorable que enorgullece a La Dormida y a toda Mendoza.
+              </p>
+            </div>
+
+            <div style="margin-top:40px;display:flex;gap:16px;flex-wrap:wrap;">
+              <a href="#atletas" class="btn btn-outline-white">
+                <i data-lucide="users"></i> Conocer la Delegación & Dorsales
+              </a>
+              <a href="#galeria" class="btn btn-cyan">
+                <i data-lucide="image"></i> Explorar Galería Fotográfica (9)
+              </a>
+            </div>
+          </article>
+
+          <!-- Columna Lateral: Ficha Técnica & Coach -->
+          <aside class="chronicle-sidebar">
+            
+            <div class="chronicle-side-box">
+              <h4>Ficha Oficial de Carrera</h4>
+              <ul style="list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:14px;font-size:0.95rem;color:#CBD5E1;">
+                <li style="border-bottom:1px solid rgba(255,255,255,0.08);padding-bottom:10px;">
+                  <strong style="color:#FFF;display:block;font-size:0.8rem;text-transform:uppercase;color:var(--cyan-primary);">Prueba:</strong>
+                  Potrero Corre 2026 (9ª Edición)
+                </li>
+                <li style="border-bottom:1px solid rgba(255,255,255,0.08);padding-bottom:10px;">
+                  <strong style="color:#FFF;display:block;font-size:0.8rem;text-transform:uppercase;color:var(--cyan-primary);">Fecha:</strong>
+                  Sábado 7 de noviembre de 2026
+                </li>
+                <li style="border-bottom:1px solid rgba(255,255,255,0.08);padding-bottom:10px;">
+                  <strong style="color:#FFF;display:block;font-size:0.8rem;text-transform:uppercase;color:var(--cyan-primary);">Circuito:</strong>
+                  Circuito Internacional de Potrero de los Funes
+                </li>
+                <li style="border-bottom:1px solid rgba(255,255,255,0.08);padding-bottom:10px;">
+                  <strong style="color:#FFF;display:block;font-size:0.8rem;text-transform:uppercase;color:var(--cyan-primary);">Distancias Disputadas por ATOM:</strong>
+                  22K · 12K · 6K
+                </li>
+                <li style="border-bottom:1px solid rgba(255,255,255,0.08);padding-bottom:10px;">
+                  <strong style="color:#FFF;display:block;font-size:0.8rem;text-transform:uppercase;color:var(--cyan-primary);">Hito de la Edición:</strong>
+                  Debut de 42K de calle en San Luis (+1.500 corredores)
+                </li>
+                <li style="border-bottom:1px solid rgba(255,255,255,0.08);padding-bottom:10px;">
+                  <strong style="color:#FFF;display:block;font-size:0.8rem;text-transform:uppercase;color:var(--cyan-primary);">Premio Obtenido:</strong>
+                  🏆 Team Más Numeroso Fuera de la Provincia
+                </li>
+                <li>
+                  <strong style="color:#FFF;display:block;font-size:0.8rem;text-transform:uppercase;color:var(--cyan-primary);">Organización:</strong>
+                  Estatus Run
+                </li>
+              </ul>
+            </div>
+
+            <div class="chronicle-side-box" style="border-color:rgba(0,229,255,0.3);background:rgba(0,21,36,0.9);">
+              <div style="display:flex;align-items:center;gap:12px;margin-bottom:16px;">
+                <img src="assets/img/library/atom-entrenador-cesar-01.webp" alt="Profesor César Vergel" style="width:54px;height:54px;border-radius:50%;object-fit:cover;border:2px solid var(--cyan-primary);" />
+                <div>
+                  <h4 style="margin:0;font-size:1.15rem;">Prof. César Vergel</h4>
+                  <span style="font-size:0.8rem;color:var(--cyan-primary);font-weight:700;">Director Técnico & Entrenador</span>
+                </div>
+              </div>
+              <p style="font-size:0.925rem;color:#CBD5E1;line-height:1.6;margin-bottom:20px;">
+                "Potrero Corre fue una demostración de lo que somos capaces de construir como equipo. Salir de Mendoza con más de 25 personas, correr con el alma en el circuito y recibir el trofeo oficial al equipo más numeroso nos llena de orgullo a todos."
+              </p>
+              <a href="https://wa.me/5492610000000?text=Hola%20Profesor%20C%C3%A9sar,%20le%C3%AD%20la%20cr%C3%B3nica%20de%20Potrero%20Corre%202026%20y%20quiero%20sumarme%20a%20los%20entrenamientos%20de%20ATOM." 
+                 target="_blank" 
+                 rel="noopener" 
+                 class="btn btn-outline-white btn-sm" 
+                 style="width:100%;display:flex;align-items:center;justify-content:center;gap:8px;">
+                <img src="assets/img/logos/whatsapp.svg" alt="WhatsApp" style="width:18px;height:18px;border-radius:4px;" />
+                Escribir al Profe César
+              </a>
+            </div>
+
+            <div class="chronicle-side-box">
+              <h4>Seguinos en Instagram</h4>
+              <p style="font-size:0.9rem;color:#94A3B8;line-height:1.5;margin-bottom:18px;">
+                En nuestra cuenta oficial <strong>@atomclubderunning</strong> podés revivir los videos del viaje a Potrero, los festejos y los entrenamientos en Mendoza.
+              </p>
+              <a href="https://www.instagram.com/atomclubderunning/" target="_blank" rel="noopener" class="btn btn-outline-white btn-sm" style="width:100%;display:flex;align-items:center;justify-content:center;gap:8px;">
+                <img src="assets/img/logos/instagram.svg" alt="Instagram" style="width:18px;height:18px;border-radius:4px;" />
+                Ver @atomclubderunning
+              </a>
+            </div>
+
+          </aside>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         DELEGACIÓN PARTICIPANTE Y RECONOCIMIENTOS OFICIALES
+         ========================================================================== -->
+    <section class="section-dark" id="atletas" style="padding:100px 0;background:#000810;border-top:1px solid var(--border-subtle);border-bottom:1px solid var(--border-subtle);">
+      <div class="container">
+        
+        <div class="section-head-clean">
+          <span class="eyebrow-tag">Delegación de ATOM RUNNING</span>
+          <h2 class="section-title-large">NUESTROS ATLETAS EN SAN LUIS</h2>
+          <p class="section-desc-editorial">
+            Representantes del este mendocino que defendieron los colores del club en las tres distancias competitivas de Potrero Corre 2026.
+          </p>
+        </div>
+
+        <div class="athletes-complete-grid">
+          
+          <!-- Atletas 22K -->
+          <div class="athlete-profile-card">
+            <div class="athlete-profile-img">
+              <img src="assets/img/eventos/potrero2026/atom-potrero-corredores-22k.webp" alt="Equipo 22K ATOM" loading="lazy" />
+            </div>
+            <div class="athlete-profile-body">
+              <span class="athlete-bib-badge">Dorsales 313 · 285 · 308 · 309 · 286</span>
+              <h3 class="athlete-profile-name">Equipo 22K</h3>
+              <p class="athlete-profile-desc">
+                Desafío de fondo completado con solvencia y gran ritmo sostenido a lo largo del circuito internacional que rodea el lago.
+              </p>
+            </div>
+          </div>
+
+          <!-- Atletas 12K y 6K -->
+          <div class="athlete-profile-card">
+            <div class="athlete-profile-img">
+              <img src="assets/img/eventos/potrero2026/atom-potrero-equipo-pista.webp" alt="Equipo 12K y 6K ATOM" loading="lazy" />
+            </div>
+            <div class="athlete-profile-body">
+              <span class="athlete-bib-badge">Dorsales 1428 · 6385 · 6551 · 6426 · 6387</span>
+              <h3 class="athlete-profile-name">Equipo 12K & 6K</h3>
+              <p class="athlete-profile-desc">
+                Velocidad, energía y garra en el trazado serrano, logrando destacados desempeños y llegadas cargadas de emoción.
+              </p>
+            </div>
+          </div>
+
+          <!-- Trofeo Oficial -->
+          <div class="athlete-profile-card">
+            <div class="athlete-profile-img">
+              <img src="assets/img/eventos/potrero2026/atom-potrero-trofeo-team-numeroso.webp" alt="Trofeo Team Más Numeroso" loading="lazy" />
+            </div>
+            <div class="athlete-profile-body">
+              <span class="athlete-bib-badge" style="background:rgba(255,179,0,0.15);color:#FFD54F;">Premio Consagratorio</span>
+              <h3 class="athlete-profile-name">Team Más Numeroso</h3>
+              <p class="athlete-profile-desc">
+                Trofeo oficial otorgado por la organización de Estatus Run a ATOM RUNNING (Mendoza) por la delegación foránea más masiva.
+              </p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         GALERÍA FOTOGRÁFICA EXCLUSIVA (9 FOTOS REALES DE POTRERO CORRE 2026)
+         ========================================================================== -->
+    <section class="event-gallery-section" id="galeria" style="padding:100px 0;background:#000B14;">
+      <div class="container">
+        
+        <div style="display:flex;align-items:flex-end;justify-content:space-between;flex-wrap:wrap;gap:20px;margin-bottom:32px;">
+          <div>
+            <span class="eyebrow-tag">Registro Fotográfico Oficial</span>
+            <h2 class="section-title-large" style="margin-bottom:8px;">GALERÍA POTRERO CORRE 2026</h2>
+            <p class="section-desc-editorial" style="margin:0;">
+              9 fotografías reales que retratan la experiencia: la salida en ruta, el dique de Potrero de los Funes, la largada en boxes, el trofeo oficial y los festejos del equipo.
+            </p>
+          </div>
+          <div style="font-family:var(--font-subheadline);font-size:0.85rem;color:var(--cyan-primary);font-weight:700;">
+            Hacé clic en cualquier foto para abrirla en pantalla completa
+          </div>
+        </div>
+
+        <!-- Filtros de Galería -->
+        <div class="gallery-filter-strip" id="eventGalleryFilters">
+          <button class="gallery-filter-pill active" data-filter="todas">Todas las Fotos (9)</button>
+          <button class="gallery-filter-pill" data-filter="equipo">Equipo ATOM</button>
+          <button class="gallery-filter-pill" data-filter="carrera">Momentos de Carrera</button>
+          <button class="gallery-filter-pill" data-filter="medallas">Llegada & Premiación</button>
+        </div>
+
+        <!-- Grilla de Fotos Reales del Evento -->
+        <div class="event-gallery-grid" id="eventGalleryGrid" data-event-id="potrero-corre-2026">
+          <!-- Renderizado dinámico desde app.js -->
+        </div>
+
+        <!-- Botones de Acción de Cierre -->
+        <div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:20px;margin-top:60px;padding-top:40px;border-top:1px solid var(--border-subtle);">
+          <a href="index.html#eventos" class="btn btn-outline-white">
+            <i data-lucide="arrow-left"></i> Volver a Todos los Eventos
+          </a>
+          <a href="https://wa.me/5492610000000?text=Hola%20ATOM!%20Vi%20la%20galer%C3%ADa%20de%20Potrero%20Corre%202026%20y%20quiero%20sumarme%20a%20los%20entrenamientos." 
+             target="_blank" 
+             rel="noopener" 
+             class="btn btn-cyan">
+            <i data-lucide="flag"></i> Sumate al Próximo Desafío con ATOM
+          </a>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         SEGUINOS EN INSTAGRAM (@atomclubderunning)
+         ========================================================================== -->
+    <section class="section-instagram-banner" id="instagram-block">
+      <div class="container">
+        <div class="instagram-header-row">
+          <div>
+            <span class="eyebrow-tag" style="color:#FFFFFF;background:rgba(225,48,108,0.15);border-color:rgba(225,48,108,0.3);display:inline-flex;align-items:center;gap:6px;">
+              <img src="assets/img/logos/instagram.svg" alt="Instagram" style="width:16px;height:16px;border-radius:3px;" />
+              Comunidad en Tiempo Real
+            </span>
+            <h2 class="section-title-large" style="margin-bottom:8px;">SEGUINOS EN INSTAGRAM</h2>
+            <p class="section-desc-editorial" style="margin:0;">
+              Documentamos cada viaje, el backstage de cada competencia y el entrenamiento diario en Mendoza.
+            </p>
+          </div>
+          <div>
+            <a href="https://www.instagram.com/atomclubderunning/" target="_blank" rel="noopener" class="btn btn-outline-white" style="display:inline-flex;align-items:center;gap:10px;">
+              <img src="assets/img/logos/instagram.svg" alt="Instagram" style="width:20px;height:20px;border-radius:5px;" />
+              Ver @atomclubderunning
+            </a>
+          </div>
+        </div>
+
+        <div class="instagram-feed-grid" id="instagramFeedGrid">
+          <!-- Renderizado dinámico de fotos reales de Instagram -->
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ==========================================================================
+       LIGHTBOX MODAL DE EVENTOS Y GALERÍA (CON NAVEGACIÓN FLECHAS Y TECLADO ESC)
+       ========================================================================== -->
+  <div class="lightbox-modal" id="lightboxModal">
+    <div class="lightbox-dialog">
+      <button class="lightbox-close" id="lightboxClose" aria-label="Cerrar imagen (ESC)">
+        <i data-lucide="x"></i>
+      </button>
+
+      <div class="lightbox-img-box">
+        <button class="lightbox-nav-btn prev" id="lightboxPrev" aria-label="Foto anterior (Flecha Izquierda)">
+          <i data-lucide="chevron-left"></i>
+        </button>
+        
+        <img id="lightboxImg" src="" alt="ATOM Evento Galería" />
+
+        <button class="lightbox-nav-btn next" id="lightboxNext" aria-label="Foto siguiente (Flecha Derecha)">
+          <i data-lucide="chevron-right"></i>
+        </button>
+      </div>
+
+      <div class="lightbox-meta">
+        <div class="lightbox-meta-text">
+          <h3 id="lightboxTitle"></h3>
+          <p id="lightboxCaption"></p>
+        </div>
+        <div class="lightbox-counter" id="lightboxCounter">
+          1 / 9
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Botón Flotante Discreto -->
+  <a href="https://wa.me/5492610000000?text=Hola,%20quiero%20conocer%20ATOM%20Club%20de%20Running%20y%20saber%20c%C3%B3mo%20puedo%20sumarme."
+     target="_blank"
+     rel="noopener"
+     class="discrete-whatsapp-dock"
+     id="floatingWaDock"
+     title="Escribinos a WhatsApp">
+    <img src="assets/img/logos/whatsapp.svg" alt="WhatsApp" width="22" height="22" />
+    <span>Sumate a ATOM</span>
+  </a>
+
+  <!-- ==========================================================================
+       FOOTER EDITORIAL
+       ========================================================================== -->
+  <footer class="site-footer-editorial">
+    <div class="container">
+      <div class="footer-editorial-grid">
+        <div class="footer-editorial-col">
+          <div style="display:flex;align-items:center;gap:14px;margin-bottom:18px;">
+            <img src="assets/img/logos/atom-emblem.svg" alt="ATOM" style="height:48px;width:48px;border-radius:12px;" />
+            <div style="font-family:var(--font-headline);font-size:1.8rem;letter-spacing:0.04em;color:#FFFFFF;">
+              ATOM <span style="color:var(--cyan-primary)">RUNNING</span>
+            </div>
+          </div>
+          <p style="font-size:1rem;color:#94A3B8;line-height:1.6;margin-bottom:20px;">
+            Comunidad deportiva y equipo de entrenamiento de running y trail en La Dormida (Santa Rosa) y La Paz, Mendoza. Entrená con método, compartí kilómetros con amigos y superá tus propios límites.
+          </p>
+          <a href="https://www.instagram.com/atomclubderunning/" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:8px;color:#FFFFFF;font-weight:700;font-size:0.925rem;">
+            <img src="assets/img/logos/instagram.svg" alt="Instagram" style="width:18px;height:18px;border-radius:4px;" />
+            @atomclubderunning
+          </a>
+        </div>
+
+        <div class="footer-editorial-col">
+          <h4>Navegación</h4>
+          <ul class="footer-links-list">
+            <li><a href="index.html#eventos">Volver a Eventos & Competencias</a></li>
+            <li><a href="evento-21k-buenos-aires.html">Media Maratón Buenos Aires 2026</a></li>
+            <li><a href="#cronica">La Travesía San Luis</a></li>
+            <li><a href="#trofeo">Trofeo Team Más Numeroso</a></li>
+            <li><a href="#galeria">Galería 9 Fotos</a></li>
+            <li><a href="index.html#entrenamientos">Modalidades de Entrenamiento</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-editorial-col">
+          <h4>Comunidad</h4>
+          <ul class="footer-links-list">
+            <li><a href="https://www.instagram.com/atomclubderunning/" target="_blank" rel="noopener">Instagram Oficial</a></li>
+            <li><a href="index.html#testimonios">Testimonios de Atletas</a></li>
+            <li><a href="index.html#faq">Preguntas Frecuentes</a></li>
+            <li><a href="index.html#contacto">Sumate por WhatsApp</a></li>
+            <li><a href="admin.html">Panel Administrador (CMS)</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-editorial-col">
+          <h4>Sedes Mendoza</h4>
+          <p style="font-size:0.9rem;color:#CBD5E1;margin-bottom:12px;">
+            <strong>La Dormida (Santa Rosa):</strong><br />
+            Lunes, Miércoles y Viernes 19:30 hs.
+          </p>
+          <p style="font-size:0.9rem;color:#CBD5E1;margin-bottom:12px;">
+            <strong>La Paz:</strong><br />
+            Martes y Jueves 19:30 hs.
+          </p>
+          <p style="font-size:0.9rem;color:#94A3B8;">
+            Prof. César Vergel (<a href="https://www.instagram.com/cesarvergel1986/" target="_blank" rel="noopener" style="color:var(--cyan-primary);">@cesarvergel1986</a>)
+          </p>
+        </div>
+      </div>
+
+      <div class="footer-editorial-bottom">
+        <div>
+          &copy; 2026 ATOM RUNNING · La Dormida & La Paz, Mendoza, Argentina.
+        </div>
+        <div>
+          <a href="index.html#eventos" style="color:var(--cyan-primary);">← Volver a la sección de Eventos</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="assets/js/data.js"></script>
+  <script src="assets/js/app.js"></script>
+</body>
+</html>
+

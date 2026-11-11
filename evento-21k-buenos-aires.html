@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Media Maratón de Buenos Aires 2026 · ATOM RUNNING</title>
+  <meta name="description" content="Crónica oficial, galería fotográfica y atletas finishers de ATOM RUNNING en la Media Maratón de Buenos Aires 2026 (21K)." />
+  
+  <!-- Tipografías Oficiales -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,600;0,700;0,800;0,900;1,700&family=Inter:wght@300;400;500;600;700&family=Syne:wght@700;800&display=swap" rel="stylesheet" />
+
+  <!-- Estilos Globales -->
+  <link rel="stylesheet" href="assets/css/style.css" />
+
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body class="atom-body">
+
+  <!-- ==========================================================================
+       HEADER EDITORIAL ATOM RUNNING
+       ========================================================================== -->
+  <header class="site-header">
+    <div class="header-inner container-wide">
+      <a href="index.html" class="brand-clean">
+        <img src="assets/img/logos/atom-emblem.svg" alt="ATOM Club de Running" class="brand-logo" style="width:44px;height:44px;border-radius:10px;" />
+        <div class="brand-text">
+          <span class="brand-name">ATOM <span class="highlight">RUNNING</span></span>
+          <span class="brand-sub">Comunidad Deportiva · Mendoza</span>
+        </div>
+      </a>
+
+      <nav class="nav-clean desktop-nav">
+        <a href="index.html#inicio">Inicio</a>
+        <a href="index.html#eventos" class="active">Eventos & Carreras</a>
+        <a href="#cronica">La Travesía 21K</a>
+        <a href="#atletas">Atletas Finishers</a>
+        <a href="#galeria">Galería (13 Fotos)</a>
+        <a href="index.html#contacto">Sumate</a>
+      </nav>
+
+      <div class="header-actions">
+        <a href="index.html#eventos" class="btn btn-outline-white btn-sm">
+          <i data-lucide="arrow-left"></i> Volver a Eventos
+        </a>
+        <button class="mobile-toggle" id="mobileToggle" aria-label="Abrir menú">
+          <i data-lucide="menu"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer -->
+  <div class="mobile-drawer" id="mobileDrawer">
+    <nav class="mobile-nav-links">
+      <a href="index.html">Inicio</a>
+      <a href="index.html#eventos">Volver a Todos los Eventos</a>
+      <a href="#cronica">Crónica del Viaje</a>
+      <a href="#atletas">Atletas Finishers & Dorsales</a>
+      <a href="#galeria">Galería Completa (13 Fotos)</a>
+      <a href="index.html#contacto">Sumate al Equipo</a>
+    </nav>
+  </div>
+
+  <main>
+    <!-- ==========================================================================
+         HERO CINEMATOGRÁFICO CON VIDEO DE FONDO: 21K BUENOS AIRES
+         ========================================================================== -->
+    <section class="event-video-hero" id="hero-video">
+      <!-- Video Background Container -->
+      <div class="event-video-bg-container">
+        <video class="event-video-element" autoplay muted loop playsinline poster="assets/img/eventos/ba21k/atom-ba21k-hero-poster.webp">
+          <source src="assets/video/ba21k/atom-ba21k-hero-loop.webm" type="video/webm" />
+          <source src="assets/video/ba21k/atom-ba21k-hero-loop.mp4" type="video/mp4" />
+        </video>
+        <img src="assets/img/eventos/ba21k/atom-ba21k-hero-poster.webp" alt="Media Maratón Buenos Aires 2026" class="event-video-poster" />
+        <div class="event-video-overlay"></div>
+        <div class="event-video-vignette"></div>
+      </div>
+
+      <div class="container event-video-content hero-animate-in">
+        
+        <div class="chronicle-breadcrumb" style="margin-bottom:18px;">
+          <a href="index.html">Inicio</a>
+          <i data-lucide="chevron-right" style="width:14px;height:14px;"></i>
+          <a href="index.html#eventos">Eventos & Competencias</a>
+          <i data-lucide="chevron-right" style="width:14px;height:14px;"></i>
+          <span>21K Buenos Aires</span>
+        </div>
+
+        <!-- Marca e Identidad ATOM RUNNING -->
+        <div class="hero-tag-brand">
+          <img src="assets/img/logos/atom-emblem.svg" alt="ATOM" style="width:24px;height:24px;border-radius:6px;" />
+          <span>ATOM RUNNING</span>
+        </div>
+
+        <h1 class="hero-title-cinematic">
+          MEDIA MARATÓN BUENOS AIRES 2026
+        </h1>
+
+        <div class="hero-dist-banner">
+          21 KILÓMETROS
+        </div>
+
+        <div class="hero-tagline-cinematic">
+          UNA EXPERIENCIA. MILES DE HISTORIAS.
+        </div>
+
+        <span class="eyebrow-tag" style="background:rgba(0,229,255,0.12);color:var(--cyan-primary);border-color:rgba(0,229,255,0.3);margin-bottom:18px;">
+          <i data-lucide="award"></i> Experiencia Oficial ATOM · 21K de Buenos Aires
+        </span>
+
+        <p class="event-hero-subtitle" style="max-width:850px;font-size:1.15rem;line-height:1.6;color:#E2E8F0;margin-bottom:24px;">
+          21 Kilómetros en el asfalto porteño. La travesía completa de ATOM RUNNING desde La Dormida y La Paz hasta cruzar la meta más emblemática de Sudamérica.
+        </p>
+
+        <!-- Barra de Metadatos del Evento Realizado -->
+        <div class="chronicle-meta-bar" style="margin-top:0;">
+          <div class="chronicle-meta-cell">
+            <span>Fecha del Evento</span>
+            <strong>23 de Agosto de 2026</strong>
+          </div>
+          <div class="chronicle-meta-cell">
+            <span>Distancia Oficial</span>
+            <strong>21 Kilómetros (Certificada)</strong>
+          </div>
+          <div class="chronicle-meta-cell">
+            <span>Lugar & Largada</span>
+            <strong>Av. Figueroa Alcorta y Dorrego, Palermo (08:00 hs)</strong>
+          </div>
+          <div class="chronicle-meta-cell">
+            <span>Delegación ATOM</span>
+            <strong>6 Atletas Finishers · Prof. César Vergel (DT)</strong>
+          </div>
+          <div class="chronicle-meta-cell">
+            <span>Clima de Carrera</span>
+            <strong>7°C · Mañana despejada y fresca</strong>
+          </div>
+        </div>
+
+        <div style="display:flex;flex-wrap:wrap;gap:16px;margin-top:28px;">
+          <a href="#galeria" class="btn btn-cyan">
+            <i data-lucide="image"></i> Ver Galería de la Carrera (13 Fotos)
+          </a>
+          <a href="index.html#eventos" class="btn btn-outline-white">
+            <i data-lucide="arrow-left"></i> Volver a Eventos
+          </a>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         CRÓNICA EDITORIAL DEL EQUIPO
+         ========================================================================== -->
+    <section class="chronicle-content-section" id="cronica">
+      <div class="container">
+        <div class="chronicle-grid">
+          
+          <!-- Columna Principal: El Relato -->
+          <article class="chronicle-article-body">
+            <span class="eyebrow-tag">Crónica del Equipo</span>
+            <h2 class="section-title-large" style="margin-bottom:24px;">DEL ESTE MENDOCINO A LA CAPITAL: EL CAMINO A LOS 21K</h2>
+            
+            <p class="chronicle-lead-para">
+              La Media Maratón de Buenos Aires representa el desafío de fondo más convocante de Latinoamérica, reuniendo a más de 25.000 atletas de todo el planeta. Para ATOM RUNNING, este viaje no fue solo una carrera: fue la coronación de meses de trabajo silencioso, compañerismo y disciplina en las calles de La Dormida y La Paz.
+            </p>
+
+            <!-- Hito 1: Preparación -->
+            <div class="chronicle-step-card">
+              <div class="chronicle-step-num">01</div>
+              <h3 class="chronicle-step-title">La Planificación en Santa Rosa y La Paz</h3>
+              <p>
+                Durante meses, el grupo entrenó rigurosamente bajo la supervisión del Profesor César Vergel. Con temperaturas de invierno, los corredores cumplieron con pasadas nocturnas a las 19:30 hs, circuitos de fuerza funcional y largas tiradas de fondo los fines de semana sobre asfalto y tierra esteña. La progresión física y la prevención de lesiones fueron las claves para que cada miembro llegara a la línea de largada con absoluta confianza.
+              </p>
+            </div>
+
+            <!-- Hito 2: El Viaje -->
+            <div class="chronicle-step-card">
+              <div class="chronicle-step-num">02</div>
+              <h3 class="chronicle-step-title">El Vuelo, la Expo y la Noche en el Obelisco</h3>
+              <p>
+                La emoción se encendió en el Aeropuerto de Mendoza al abordar el vuelo hacia Buenos Aires. Una vez instalada en la capital, la delegación visitó el predio ferial en Palermo para retirar sus kits oficiales y dorsales en la Expo Adidas. La noche previa a la carrera tuvo como postal infaltable la visita al Obelisco de Buenos Aires iluminado, donde el equipo compartió risas, hidratación y la concentración previa al gran día.
+              </p>
+            </div>
+
+            <div class="chronicle-pullquote">
+              "El verdadero valor de correr no está en ganarle al reloj, sino en descubrir que tus límites estaban mucho más lejos de lo que creías cuando corrés en equipo."
+            </div>
+
+            <!-- Hito 3: La Largada -->
+            <div class="chronicle-step-card">
+              <div class="chronicle-step-num">03</div>
+              <h3 class="chronicle-step-title">Domingo 08:00 hs: La Marea de 25.000 Corredores</h3>
+              <p>
+                Con 7°C y un cielo diáfano, la Av. Figueroa Alcorta y Dorrego se convirtió en una marea interminable de atletas. Los corredores de ATOM ingresaron a sus cajones de largada, ajustaron sus cronómetros y, al sonido del disparo de salida, encararon los 21 kilómetros por los puntos más icónicos de Buenos Aires: el Rosedal, la Av. 9 de Julio, el Teatro Colón y la Plaza de Mayo, manteniendo ritmos firmes y dosificados.
+              </p>
+            </div>
+
+            <!-- Hito 4: La Meta -->
+            <div class="chronicle-step-card">
+              <div class="chronicle-step-num">04</div>
+              <h3 class="chronicle-step-title">La Llegada, el Abrazo y la Bandera en Alto</h3>
+              <p>
+                Cruzar el arco de meta en Palermo desató una mezcla de lágrimas, euforia y abrazos interminables. Daniela, Eliana, Maira, Sonia, Yair y el entrenador César recibieron sus medallas finisher con la clásica cinta violeta. Con la bandera oficial de <strong>ATOM Club de Running · La Dormida - Mendoza</strong> desplegada sobre el césped de Palermo, el equipo demostró que cuando hay pasión y constancia, la distancia se transforma en victoria compartida.
+              </p>
+            </div>
+
+            <div style="margin-top:40px;display:flex;gap:16px;flex-wrap:wrap;">
+              <a href="#atletas" class="btn btn-outline-white">
+                <i data-lucide="users"></i> Conocer a los Atletas Finishers
+              </a>
+              <a href="#galeria" class="btn btn-cyan">
+                <i data-lucide="image"></i> Explorar Galería Fotográfica
+              </a>
+            </div>
+          </article>
+
+          <!-- Columna Lateral: Ficha Técnica & Coach -->
+          <aside class="chronicle-sidebar">
+            
+            <div class="chronicle-side-box">
+              <h4>Ficha Técnica 21K</h4>
+              <ul style="list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:14px;font-size:0.95rem;color:#CBD5E1;">
+                <li style="border-bottom:1px solid rgba(255,255,255,0.08);padding-bottom:10px;">
+                  <strong style="color:#FFF;display:block;font-size:0.8rem;text-transform:uppercase;color:var(--cyan-primary);">Competencia:</strong>
+                  Media Maratón de Buenos Aires 2026
+                </li>
+                <li style="border-bottom:1px solid rgba(255,255,255,0.08);padding-bottom:10px;">
+                  <strong style="color:#FFF;display:block;font-size:0.8rem;text-transform:uppercase;color:var(--cyan-primary);">Fecha:</strong>
+                  Domingo 23 de agosto de 2026
+                </li>
+                <li style="border-bottom:1px solid rgba(255,255,255,0.08);padding-bottom:10px;">
+                  <strong style="color:#FFF;display:block;font-size:0.8rem;text-transform:uppercase;color:var(--cyan-primary);">Distancia:</strong>
+                  21,097 km (Certificado World Athletics)
+                </li>
+                <li style="border-bottom:1px solid rgba(255,255,255,0.08);padding-bottom:10px;">
+                  <strong style="color:#FFF;display:block;font-size:0.8rem;text-transform:uppercase;color:var(--cyan-primary);">Largada & Meta:</strong>
+                  Av. Figueroa Alcorta y Dorrego, Palermo
+                </li>
+                <li style="border-bottom:1px solid rgba(255,255,255,0.08);padding-bottom:10px;">
+                  <strong style="color:#FFF;display:block;font-size:0.8rem;text-transform:uppercase;color:var(--cyan-primary);">Horario:</strong>
+                  08:00 hs (Largada general)
+                </li>
+                <li>
+                  <strong style="color:#FFF;display:block;font-size:0.8rem;text-transform:uppercase;color:var(--cyan-primary);">Participantes:</strong>
+                  Más de 25.000 corredores internacionales
+                </li>
+              </ul>
+            </div>
+
+            <div class="chronicle-side-box" style="border-color:rgba(0,229,255,0.3);background:rgba(0,21,36,0.9);">
+              <div style="display:flex;align-items:center;gap:12px;margin-bottom:16px;">
+                <img src="assets/img/library/atom-entrenador-cesar-01.webp" alt="Profesor César Vergel" style="width:54px;height:54px;border-radius:50%;object-fit:cover;border:2px solid var(--cyan-primary);" />
+                <div>
+                  <h4 style="margin:0;font-size:1.15rem;">Prof. César Vergel</h4>
+                  <span style="font-size:0.8rem;color:var(--cyan-primary);font-weight:700;">Director Técnico & Entrenador</span>
+                </div>
+              </div>
+              <p style="font-size:0.925rem;color:#CBD5E1;line-height:1.6;margin-bottom:20px;">
+                "Ver llegar a los chicos a la meta después de tantos meses de esfuerzo en La Dormida y La Paz es la mayor satisfacción como profesor. Correr 21K no es fácil, pero cuando hay disciplina y un equipo que te sostiene, la meta siempre llega."
+              </p>
+              <a href="https://wa.me/5492610000000?text=Hola%20Profesor%20C%C3%A9sar,%20le%C3%AD%20la%20cr%C3%B3nica%20de%20los%2021K%20de%20Buenos%20Aires%20y%20quiero%20sumarme%20a%20los%20entrenamientos%20de%20ATOM." 
+                 target="_blank" 
+                 rel="noopener" 
+                 class="btn btn-outline-white btn-sm" 
+                 style="width:100%;display:flex;align-items:center;justify-content:center;gap:8px;">
+                <img src="assets/img/logos/whatsapp.svg" alt="WhatsApp" style="width:18px;height:18px;border-radius:4px;" />
+                Escribir al Profe César
+              </a>
+            </div>
+
+            <div class="chronicle-side-box">
+              <h4>Seguinos en Instagram</h4>
+              <p style="font-size:0.9rem;color:#94A3B8;line-height:1.5;margin-bottom:18px;">
+                En nuestra cuenta oficial <strong>@atomclubderunning</strong> publicamos todas las historias en vivo de los viajes, los podios y los entrenamientos semanales.
+              </p>
+              <a href="https://www.instagram.com/atomclubderunning/" target="_blank" rel="noopener" class="btn btn-outline-white btn-sm" style="width:100%;display:flex;align-items:center;justify-content:center;gap:8px;">
+                <img src="assets/img/logos/instagram.svg" alt="Instagram" style="width:18px;height:18px;border-radius:4px;" />
+                Ver @atomclubderunning
+              </a>
+            </div>
+
+          </aside>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         ROSTER COMPLETO DE ATLETAS PARTICIPANTES CON FOTOS Y DORSALES
+         ========================================================================== -->
+    <section class="section-dark" id="atletas" style="padding:100px 0;background:#000810;border-top:1px solid var(--border-subtle);border-bottom:1px solid var(--border-subtle);">
+      <div class="container">
+        
+        <div class="section-head-clean">
+          <span class="eyebrow-tag">Delegación Oficial</span>
+          <h2 class="section-title-large">NUESTROS ATLETAS FINISHERS</h2>
+          <p class="section-desc-editorial">
+            Los corredores de ATOM RUNNING que representaron a Santa Rosa y La Paz en la Media Maratón de Buenos Aires 2026 con sus dorsales de carrera.
+          </p>
+        </div>
+
+        <div class="athletes-complete-grid">
+          
+          <!-- Atleta 1: Yair -->
+          <div class="athlete-profile-card">
+            <div class="athlete-profile-img">
+              <img src="assets/img/eventos/ba21k/atom-ba21k-medalla-yair.webp" alt="Yair Finisher 21K" loading="lazy" />
+            </div>
+            <div class="athlete-profile-body">
+              <span class="athlete-bib-badge">Dorsal 07850 · Finisher</span>
+              <h3 class="athlete-profile-name">Yair</h3>
+              <p class="athlete-profile-desc">
+                Completó los 21 kilómetros con un ritmo constante y sostenido, exhibiendo con orgullo la medalla oficial en Palermo.
+              </p>
+            </div>
+          </div>
+
+          <!-- Atleta 2: Daniela -->
+          <div class="athlete-profile-card">
+            <div class="athlete-profile-img">
+              <img src="assets/img/eventos/ba21k/atom-ba21k-medalla-daniela.webp" alt="Daniela Finisher 21K" loading="lazy" />
+            </div>
+            <div class="athlete-profile-body">
+              <span class="athlete-bib-badge">Dorsal 21621 · Finisher</span>
+              <h3 class="athlete-profile-name">Daniela</h3>
+              <p class="athlete-profile-desc">
+                Superación personal y constancia inquebrantable para cruzar la meta más importante de su trayectoria deportiva.
+              </p>
+            </div>
+          </div>
+
+          <!-- Atleta 3: Eliana -->
+          <div class="athlete-profile-card">
+            <div class="athlete-profile-img">
+              <img src="assets/img/eventos/ba21k/atom-ba21k-medalla-eliana.webp" alt="Eliana Finisher 21K" loading="lazy" />
+            </div>
+            <div class="athlete-profile-body">
+              <span class="athlete-bib-badge">Dorsal 28774 · Finisher</span>
+              <h3 class="athlete-profile-name">Eliana</h3>
+              <p class="athlete-profile-desc">
+                Dedicación plena en cada sesión nocturna de entrenamiento y una llegada llena de emoción y compañerismo en Palermo.
+              </p>
+            </div>
+          </div>
+
+          <!-- Atleta 4: Maira -->
+          <div class="athlete-profile-card">
+            <div class="athlete-profile-img">
+              <img src="assets/img/eventos/ba21k/atom-ba21k-medalla-maira.webp" alt="Maira Finisher 21K" loading="lazy" />
+            </div>
+            <div class="athlete-profile-body">
+              <span class="athlete-bib-badge">Dorsal 21243 · Finisher</span>
+              <h3 class="athlete-profile-name">Maira</h3>
+              <p class="athlete-profile-desc">
+                Garra y entusiasmo contagiante a lo largo de todo el recorrido porteño, coronando con la medalla en el pecho.
+              </p>
+            </div>
+          </div>
+
+          <!-- Atleta 5: Sonia -->
+          <div class="athlete-profile-card">
+            <div class="athlete-profile-img">
+              <img src="assets/img/eventos/ba21k/atom-ba21k-equipo-medallas.webp" alt="Sonia Finisher 21K" loading="lazy" />
+            </div>
+            <div class="athlete-profile-body">
+              <span class="athlete-bib-badge">Dorsal 28786 · Finisher</span>
+              <h3 class="athlete-profile-name">Sonia</h3>
+              <p class="athlete-profile-desc">
+                Espíritu de equipo incondicional y constancia en la preparación que se tradujeron en una gran carrera de 21K.
+              </p>
+            </div>
+          </div>
+
+          <!-- Atleta 6: Prof. César Vergel -->
+          <div class="athlete-profile-card">
+            <div class="athlete-profile-img">
+              <img src="assets/img/eventos/ba21k/atom-ba21k-previa-palermo.webp" alt="Profesor César Vergel" loading="lazy" />
+            </div>
+            <div class="athlete-profile-body">
+              <span class="athlete-bib-badge">Director Técnico · Entrenador</span>
+              <h3 class="athlete-profile-name">César Vergel</h3>
+              <p class="athlete-profile-desc">
+                Conducción técnica, dosificación de cargas, motivación constante y presencia en cada kilómetro junto a sus corredores.
+              </p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         GALERÍA FOTOGRÁFICA COMPLETA DEL EVENTO (13 FOTOGRAFÍAS REALES)
+         ========================================================================== -->
+    <section class="event-gallery-section" id="galeria" style="padding:100px 0;background:#000B14;">
+      <div class="container">
+        
+        <div style="display:flex;align-items:flex-end;justify-content:space-between;flex-wrap:wrap;gap:20px;margin-bottom:32px;">
+          <div>
+            <span class="eyebrow-tag">Registro Fotográfico Oficial</span>
+            <h2 class="section-title-large" style="margin-bottom:8px;">GALERÍA 21K BUENOS AIRES</h2>
+            <p class="section-desc-editorial" style="margin:0;">
+              13 fotografías reales que capturan toda la vivencia: el vuelo desde Mendoza, la noche en el Obelisco, el retiro de kits en la Expo, la largada multitudinaria y el festejo en la meta.
+            </p>
+          </div>
+          <div style="font-family:var(--font-subheadline);font-size:0.85rem;color:var(--cyan-primary);font-weight:700;">
+            Hacé clic en cualquier foto para abrirla en pantalla completa
+          </div>
+        </div>
+
+        <!-- Filtros de Galería -->
+        <div class="gallery-filter-strip" id="eventGalleryFilters">
+          <button class="gallery-filter-pill active" data-filter="todas">Todas las Fotos (13)</button>
+          <button class="gallery-filter-pill" data-filter="equipo">Equipo ATOM</button>
+          <button class="gallery-filter-pill" data-filter="medallas">Llegada & Medallas</button>
+          <button class="gallery-filter-pill" data-filter="carrera">Momentos de Carrera</button>
+        </div>
+
+        <!-- Grilla de Fotos Reales del Evento -->
+        <div class="event-gallery-grid" id="eventGalleryGrid">
+          <!-- Renderizado dinámico desde app.js -->
+        </div>
+
+        <!-- Botones de Acción de Cierre -->
+        <div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:20px;margin-top:60px;padding-top:40px;border-top:1px solid var(--border-subtle);">
+          <a href="index.html#eventos" class="btn btn-outline-white">
+            <i data-lucide="arrow-left"></i> Volver a Todos los Eventos
+          </a>
+          <a href="https://wa.me/5492610000000?text=Hola%20ATOM!%20Vi%20la%20galer%C3%ADa%20de%20los%2021K%20y%20quiero%20sumarme%20a%20los%20entrenamientos%20para%20viajar%20a%20las%20pr%C3%B3ximas%20carreras." 
+             target="_blank" 
+             rel="noopener" 
+             class="btn btn-cyan">
+            <i data-lucide="flag"></i> Sumate al Próximo Desafío con ATOM
+          </a>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         SEGUINOS EN INSTAGRAM (@atomclubderunning)
+         ========================================================================== -->
+    <section class="section-instagram-banner" id="instagram-block">
+      <div class="container">
+        <div class="instagram-header-row">
+          <div>
+            <span class="eyebrow-tag" style="color:#FFFFFF;background:rgba(225,48,108,0.15);border-color:rgba(225,48,108,0.3);display:inline-flex;align-items:center;gap:6px;">
+              <img src="assets/img/logos/instagram.svg" alt="Instagram" style="width:16px;height:16px;border-radius:3px;" />
+              Comunidad en Tiempo Real
+            </span>
+            <h2 class="section-title-large" style="margin-bottom:8px;">SEGUINOS EN INSTAGRAM</h2>
+            <p class="section-desc-editorial" style="margin:0;">
+              Documentamos cada participación deportiva, los viajes del equipo y el entrenamiento diario en Mendoza.
+            </p>
+          </div>
+          <div>
+            <a href="https://www.instagram.com/atomclubderunning/" target="_blank" rel="noopener" class="btn btn-outline-white" style="display:inline-flex;align-items:center;gap:10px;">
+              <img src="assets/img/logos/instagram.svg" alt="Instagram" style="width:20px;height:20px;border-radius:5px;" />
+              Ver @atomclubderunning
+            </a>
+          </div>
+        </div>
+
+        <div class="instagram-feed-grid" id="instagramFeedGrid">
+          <!-- Renderizado dinámico de fotos reales de Instagram -->
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ==========================================================================
+       LIGHTBOX MODAL DE EVENTOS Y GALERÍA (CON NAVEGACIÓN FLECHAS Y TECLADO ESC)
+       ========================================================================== -->
+  <div class="lightbox-modal" id="lightboxModal">
+    <div class="lightbox-dialog">
+      <button class="lightbox-close" id="lightboxClose" aria-label="Cerrar imagen (ESC)">
+        <i data-lucide="x"></i>
+      </button>
+
+      <div class="lightbox-img-box">
+        <button class="lightbox-nav-btn prev" id="lightboxPrev" aria-label="Foto anterior (Flecha Izquierda)">
+          <i data-lucide="chevron-left"></i>
+        </button>
+        
+        <img id="lightboxImg" src="" alt="ATOM Evento Galería" />
+
+        <button class="lightbox-nav-btn next" id="lightboxNext" aria-label="Foto siguiente (Flecha Derecha)">
+          <i data-lucide="chevron-right"></i>
+        </button>
+      </div>
+
+      <div class="lightbox-meta">
+        <div class="lightbox-meta-text">
+          <h3 id="lightboxTitle"></h3>
+          <p id="lightboxCaption"></p>
+        </div>
+        <div class="lightbox-counter" id="lightboxCounter">
+          1 / 13
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Botón Flotante Discreto -->
+  <a href="https://wa.me/5492610000000?text=Hola,%20quiero%20conocer%20ATOM%20Club%20de%20Running%20y%20saber%20c%C3%B3mo%20puedo%20sumarme."
+     target="_blank"
+     rel="noopener"
+     class="discrete-whatsapp-dock"
+     id="floatingWaDock"
+     title="Escribinos a WhatsApp">
+    <img src="assets/img/logos/whatsapp.svg" alt="WhatsApp" width="22" height="22" />
+    <span>Sumate a ATOM</span>
+  </a>
+
+  <!-- ==========================================================================
+       FOOTER EDITORIAL
+       ========================================================================== -->
+  <footer class="site-footer-editorial">
+    <div class="container">
+      <div class="footer-editorial-grid">
+        <div class="footer-editorial-col">
+          <div style="display:flex;align-items:center;gap:14px;margin-bottom:18px;">
+            <img src="assets/img/logos/atom-emblem.svg" alt="ATOM" style="height:48px;width:48px;border-radius:12px;" />
+            <div style="font-family:var(--font-headline);font-size:1.8rem;letter-spacing:0.04em;color:#FFFFFF;">
+              ATOM <span style="color:var(--cyan-primary)">RUNNING</span>
+            </div>
+          </div>
+          <p style="font-size:1rem;color:#94A3B8;line-height:1.6;margin-bottom:20px;">
+            Comunidad deportiva y equipo de entrenamiento de running y trail en La Dormida (Santa Rosa) y La Paz, Mendoza. Entrená con método, compartí kilómetros con amigos y superá tus propios límites.
+          </p>
+          <a href="https://www.instagram.com/atomclubderunning/" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:8px;color:#FFFFFF;font-weight:700;font-size:0.925rem;">
+            <img src="assets/img/logos/instagram.svg" alt="Instagram" style="width:18px;height:18px;border-radius:4px;" />
+            @atomclubderunning
+          </a>
+        </div>
+
+        <div class="footer-editorial-col">
+          <h4>Navegación</h4>
+          <ul class="footer-links-list">
+            <li><a href="index.html#eventos">Volver a Eventos & Competencias</a></li>
+            <li><a href="evento-potrero-corre-2026.html">Potrero Corre 2026 (San Luis)</a></li>
+            <li><a href="#cronica">La Travesía 21K</a></li>
+            <li><a href="#atletas">Atletas Finishers</a></li>
+            <li><a href="#galeria">Galería 13 Fotos</a></li>
+            <li><a href="index.html#entrenamientos">Modalidades de Entrenamiento</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-editorial-col">
+          <h4>Comunidad</h4>
+          <ul class="footer-links-list">
+            <li><a href="https://www.instagram.com/atomclubderunning/" target="_blank" rel="noopener">Instagram Oficial</a></li>
+            <li><a href="index.html#testimonios">Testimonios de Atletas</a></li>
+            <li><a href="index.html#faq">Preguntas Frecuentes</a></li>
+            <li><a href="index.html#contacto">Sumate por WhatsApp</a></li>
+            <li><a href="admin.html">Panel Administrador (CMS)</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-editorial-col">
+          <h4>Sedes Mendoza</h4>
+          <p style="font-size:0.9rem;color:#CBD5E1;margin-bottom:12px;">
+            <strong>La Dormida (Santa Rosa):</strong><br />
+            Lunes, Miércoles y Viernes 19:30 hs.
+          </p>
+          <p style="font-size:0.9rem;color:#CBD5E1;margin-bottom:12px;">
+            <strong>La Paz:</strong><br />
+            Martes y Jueves 19:30 hs.
+          </p>
+          <p style="font-size:0.9rem;color:#94A3B8;">
+            Prof. César Vergel (<a href="https://www.instagram.com/cesarvergel1986/" target="_blank" rel="noopener" style="color:var(--cyan-primary);">@cesarvergel1986</a>)
+          </p>
+        </div>
+      </div>
+
+      <div class="footer-editorial-bottom">
+        <div>
+          &copy; 2026 ATOM RUNNING · La Dormida & La Paz, Mendoza, Argentina.
+        </div>
+        <div>
+          <a href="index.html#eventos" style="color:var(--cyan-primary);">← Volver a la sección de Eventos</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="assets/js/data.js"></script>
+  <script src="assets/js/app.js"></script>
+</body>
+</html>
+
