@@ -24,7 +24,16 @@ function copyDir(src, dest) {
 // Ensure dist/assets has all original assets (js, css, img, video)
 const srcAssets = path.join(__dirname, 'assets');
 const distAssets = path.join(__dirname, 'dist', 'assets');
+const srcPublic = path.join(__dirname, 'public');
+const distRoot = path.join(__dirname, 'dist');
 
 console.log('Copying assets/ to dist/assets/ for production deployment...');
 copyDir(srcAssets, distAssets);
+
+if (fs.existsSync(srcPublic)) {
+  console.log('Copying public/ to dist/ for production deployment...');
+  copyDir(srcPublic, distRoot);
+}
+
 console.log('Assets copied successfully.');
+
